@@ -1,6 +1,6 @@
 // !STARTERCONF Change the siteUrl
 module.exports = {
-  siteUrl: 'https://tsnext-tw.thcl.dev/',
+  siteUrl: 'https://ikseda.vercel.app/',
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [{ userAgent: '*', allow: '/' }],

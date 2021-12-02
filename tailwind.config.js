@@ -17,13 +17,17 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      backgroundImage: {
+        texture: "url('/images/texture.png')",
+        shapes: "url('/images/bg-shapes.svg')",
+        'shapes-light': "url('/images/bg-shapes-light.svg')",
+      },
       fontFamily: {
-        primary: ['Inter', ...fontFamily.sans],
+        primary: ['Montserrat', ...fontFamily.sans],
       },
       colors: {
         primary: {
           // Customize it on globals.css :root
-          50: withOpacity('--tw-clr-primary-50'),
           100: withOpacity('--tw-clr-primary-100'),
           200: withOpacity('--tw-clr-primary-200'),
           300: withOpacity('--tw-clr-primary-300'),
@@ -35,6 +39,11 @@ module.exports = {
           900: withOpacity('--tw-clr-primary-900'),
         },
         dark: '#222222',
+
+        teal: '#46C0AE',
+        magenta: '#F45B49',
+        navy: '#07739E',
+        mustard: '#FDCE4A',
       },
       keyframes: {
         flicker: {

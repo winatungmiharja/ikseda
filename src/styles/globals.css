@@ -4,41 +4,65 @@
 
 :root {
   /* #region  /**=========== Primary Color =========== */
-  /* !STARTERCONF Customize these variable, copy and paste from /styles/colors.css for list of colors */
-  --tw-clr-primary-50: 240, 249, 255;
-  --tw-clr-primary-100: 224, 242, 254;
-  --tw-clr-primary-200: 186, 230, 253;
-  --tw-clr-primary-300: 125, 211, 252;
-  --tw-clr-primary-400: 56, 189, 248;
-  --tw-clr-primary-500: 14, 165, 233;
-  --tw-clr-primary-600: 2, 132, 199;
-  --tw-clr-primary-700: 3, 105, 161;
-  --tw-clr-primary-800: 7, 89, 133;
-  --tw-clr-primary-900: 12, 74, 110;
-  --clr-primary-50: rgb(var(--tw-clr-primary-50)); /* #f0f9ff */
-  --clr-primary-100: rgb(var(--tw-clr-primary-100)); /* #e0f2fe */
-  --clr-primary-200: rgb(var(--tw-clr-primary-200)); /* #bae6fd */
-  --clr-primary-300: rgb(var(--tw-clr-primary-300)); /* #7dd3fc */
-  --clr-primary-400: rgb(var(--tw-clr-primary-400)); /* #38bdf8 */
-  --clr-primary-500: rgb(var(--tw-clr-primary-500)); /* #0ea5e9 */
-  --clr-primary-600: rgb(var(--tw-clr-primary-600)); /* #0284c7 */
-  --clr-primary-700: rgb(var(--tw-clr-primary-700)); /* #0369a1 */
-  --clr-primary-800: rgb(var(--tw-clr-primary-800)); /* #075985 */
-  --clr-primary-900: rgb(var(--tw-clr-primary-900)); /* #0c4a6e */
+  --tw-clr-primary-100: 254, 247, 241;
+  --tw-clr-primary-200: 255, 233, 216;
+  --tw-clr-primary-300: 238, 202, 172;
+  --tw-clr-primary-400: 248, 212, 143;
+  --tw-clr-primary-500: 231, 145, 69;
+  --tw-clr-primary-600: 140, 94, 55;
+  --tw-clr-primary-700: 121, 75, 37;
+  --tw-clr-primary-800: 62, 28, 0;
+  --tw-clr-primary-900: 31, 14, 0;
+  --clr-primary-100: rgb(var(--tw-clr-primary-100)); /* #FEF7F1 */
+  --clr-primary-200: rgb(var(--tw-clr-primary-200)); /* #FFE9D8 */
+  --clr-primary-300: rgb(var(--tw-clr-primary-300)); /* #DEBDA1 */
+  --clr-primary-400: rgb(var(--tw-clr-primary-400)); /* #F8D48F */
+  --clr-primary-500: rgb(var(--tw-clr-primary-500)); /* #E79145 */
+  --clr-primary-600: rgb(var(--tw-clr-primary-600)); /* #8C5E37 */
+  --clr-primary-700: rgb(var(--tw-clr-primary-700)); /* #794B25 */
+  --clr-primary-800: rgb(var(--tw-clr-primary-800)); /* #3E1C00 */
+  --clr-primary-900: rgb(var(--tw-clr-primary-900)); /* #1F0E00 */
   /* #endregion  /**======== Primary Color =========== */
 }
 
 @layer base {
-  /* inter var - latin */
+  html {
+    scroll-behavior: smooth;
+  }
   @font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 100 900;
-    font-display: optional;
-    src: url('/fonts/inter-var-latin.woff2') format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-      U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
-      U+2215, U+FEFF, U+FFFD;
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat/Montserrat-Regular.ttf');
+    font-style: medium;
+    font-weight: 400;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat/Montserrat-Medium.ttf');
+    font-style: medium;
+    font-weight: 500;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat/Montserrat-SemiBold.ttf');
+    font-style: medium;
+    font-weight: 600;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat/Montserrat-Bold.ttf');
+    font-style: medium;
+    font-weight: 700;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat/Montserrat-Black.ttf');
+    font-style: medium;
+    font-weight: 900;
+    font-display: swap;
   }
 
   .cursor-newtab {
@@ -47,24 +71,63 @@
 
   /* #region  /**=========== Typography =========== */
   h1 {
-    @apply font-primary text-2xl font-bold md:text-4xl;
+    @apply m-0 text-6xl font-black text-primary-900 md:text-7xl;
   }
 
   h2 {
-    @apply font-primary text-xl font-bold md:text-3xl;
+    @apply text-4xl font-black text-primary-900 md:text-5xl;
   }
 
   h3 {
-    @apply font-primary text-lg font-bold md:text-2xl;
+    @apply text-3xl font-semibold text-primary-900 md:text-4xl;
   }
 
   h4 {
-    @apply font-primary text-base font-bold md:text-lg;
+    @apply text-xl font-semibold text-primary-900 md:text-2xl;
+  }
+  body {
+    @apply text-sm text-primary-900 md:text-base;
+  }
+  p.heading {
+    @apply text-lg font-semibold text-primary-900 md:text-xl;
+  }
+  p.content {
+    @apply text-sm font-normal text-primary-900 md:text-lg;
+  }
+  .bg-paper {
+    @apply bg-texture bg-primary-300 bg-repeat;
+  }
+  .font-outline-500-md {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--clr-primary-500);
+  }
+  .font-outline-700-md {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--clr-primary-700);
+  }
+  .font-outline-900-md {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--clr-primary-900);
+  }
+  .font-outline-500-sm {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--clr-primary-500);
+  }
+  .font-outline-700-sm {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--clr-primary-700);
+  }
+  .font-outline-900-sm {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--clr-primary-900);
   }
 
-  body {
-    @apply font-primary text-sm md:text-base;
-  }
   /* #endregion  /**======== Typography =========== */
 
   .layout {

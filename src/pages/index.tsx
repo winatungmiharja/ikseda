@@ -1,58 +1,125 @@
 import * as React from 'react';
 
 import Layout from '@/components/layout/Layout';
-import ButtonLink from '@/components/links/ButtonLink';
-import CustomLink from '@/components/links/CustomLink';
-import UnstyledLink from '@/components/links/UnstyledLink';
 import Seo from '@/components/Seo';
 
-// !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
-// Before you begin editing, follow all comments with `STARTERCONF`,
-// to customize the default configuration.
-
-export default function HomePage() {
+export default function SandboxPage() {
   return (
     <Layout>
-      {/* <Seo templateTitle='Home' /> */}
-      <Seo />
+      <Seo templateTitle='Sandbox' />
 
       <main>
-        <section className='bg-dark'>
-          <div className='layout flex flex-col justify-center items-center min-h-screen text-center text-white'>
-            <h1>Next.js + Tailwind CSS + TypeScript Starter</h1>
-            <p className='mt-2 text-sm text-gray-300'>
-              A starter for Next.js, Tailwind CSS, and TypeScript with Absolute
-              Import, Seo, Link component, pre-configured with Husky{' '}
-            </p>
-            <p className='mt-2 text-sm text-gray-200'>
-              <CustomLink href='https://github.com/theodorusclarence/ts-nextjs-tailwind-starter'>
-                See the repository
-              </CustomLink>
-            </p>
-
-            <ButtonLink className='mt-6' href='/components' variant='light'>
-              See all components
-            </ButtonLink>
-
-            <UnstyledLink
-              href='https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Ftheodorusclarence%2Fts-nextjs-tailwind-starter'
-              className='mt-4'
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                width='92'
-                height='32'
-                src='https://vercel.com/button'
-                alt='Deploy with Vercel'
-              />
-            </UnstyledLink>
-
-            <footer className='absolute bottom-2 text-gray-500'>
-              © {new Date().getFullYear()} By{' '}
-              <CustomLink href='https://theodorusclarence.com?ref=tsnextstarter'>
-                Theodorus Clarence
-              </CustomLink>
-            </footer>
+        <section className='bg-paper'>
+          <div className='bg-shapes-light layout py-4 min-h-screen bg-primary-100 bg-contain'>
+            <div className='p-4 md:p-16'>
+              <ul className='flex flex-col gap-8'>
+                <h2 className='text-primary-300'>
+                  Sandbox{' '}
+                  <span className='text-lg font-semibold'>for the website</span>
+                </h2>
+                <hr />
+                <li>
+                  <p>
+                    00. Premade background
+                    <div>
+                      use{' '}
+                      <span className='px-2 py-1 bg-primary-300'>bg-paper</span>{' '}
+                      for paper like background like on the left and right
+                    </div>{' '}
+                    <div>
+                      use{' '}
+                      <span className='px-2 py-1 bg-primary-300'>
+                        bg-shapes
+                      </span>{' '}
+                      for background shapes dark
+                    </div>
+                    <div>
+                      use{' '}
+                      <span className='px-2 py-1 bg-primary-300'>
+                        bg-shapes-light
+                      </span>{' '}
+                      for background shapes light
+                    </div>
+                  </p>
+                </li>
+                <hr />
+                <li>
+                  01. Typography
+                  <h1>
+                    This is a{' '}
+                    <span className='font-outline-900-sm md:font-outline-900-md'>
+                      Main title
+                    </span>
+                  </h1>
+                  <h2>
+                    This is a smaller{' '}
+                    <span className='font-outline-900-sm md:font-outline-900-md'>
+                      Main title
+                    </span>
+                  </h2>
+                  <h3>This is big subtitle</h3>
+                  <h4>This is smaller subtitle</h4>
+                  <p className='heading'>This is Heading</p>
+                  <p className='content'>This is content</p>
+                </li>
+                <hr />
+                <li>
+                  02. Color Palette
+                  <div className='grid grid-cols-1 gap-2 md:grid-cols-2'>
+                    <div className='flex flex-col gap-2'>
+                      <p className='heading'>Main color</p>
+                      <div className='p-4 w-full bg-primary-100 border-2 border-primary-900 shadow-xl'>
+                        primary-100
+                      </div>
+                      <div className='p-4 w-full bg-primary-200 border-2 border-primary-900 shadow-xl'>
+                        primary-200
+                      </div>
+                      <div className='p-4 w-full bg-primary-300 border-2 border-primary-900 shadow-xl'>
+                        primary-300{' '}
+                        <small>(for the left and right bg color)</small>
+                      </div>
+                      <div className='p-4 w-full bg-primary-400 border-2 border-primary-900 shadow-xl'>
+                        primary-400 <small>(main yellow bg color)</small>
+                      </div>
+                      <div className='p-4 w-full bg-primary-500 border-2 border-primary-900 shadow-xl'>
+                        primary-500{' '}
+                        <small>
+                          (main orange bg color, outline font color available)
+                        </small>
+                      </div>
+                      <div className='p-4 w-full text-primary-100 bg-primary-600 border-2 border-primary-900 shadow-xl'>
+                        primary-600
+                      </div>
+                      <div className='p-4 w-full text-primary-100 bg-primary-700 border-2 border-primary-900 shadow-xl'>
+                        primary-700{' '}
+                        <small>(outline font color available)</small>
+                      </div>
+                      <div className='p-4 w-full text-primary-100 bg-primary-800 border-2 border-primary-900 shadow-xl'>
+                        primary-800
+                      </div>
+                      <div className='p-4 w-full text-primary-100 bg-primary-900 border-2 border-primary-900 shadow-xl'>
+                        primary-900 <small>default text color</small>
+                      </div>
+                    </div>
+                    <div className='flex flex-col gap-2'>
+                      <p className='heading'>Accent Color</p>
+                      <div className='bg-teal p-4 w-full border-2 border-primary-900 shadow-xl'>
+                        teal
+                      </div>
+                      <div className='bg-magenta p-4 w-full border-2 border-primary-900 shadow-xl'>
+                        magenta
+                      </div>
+                      <div className='bg-navy p-4 w-full border-2 border-primary-900 shadow-xl'>
+                        navy
+                      </div>
+                      <div className='bg-mustard p-4 w-full border-2 border-primary-900 shadow-xl'>
+                        mustard
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
       </main>
