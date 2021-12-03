@@ -71,59 +71,53 @@
 
   /* #region  /**=========== Typography =========== */
   h1 {
-    @apply m-0 text-6xl font-black text-primary-900 md:text-7xl;
+    @apply font-primary m-0 text-4xl font-black text-primary-900 md:text-6xl;
   }
 
   h2 {
-    @apply text-4xl font-black text-primary-900 md:text-5xl;
+    @apply font-primary text-3xl font-black text-primary-900 md:text-5xl;
   }
 
   h3 {
-    @apply text-3xl font-semibold text-primary-900 md:text-4xl;
+    @apply font-primary text-3xl font-semibold text-primary-900 md:text-4xl;
   }
 
   h4 {
-    @apply text-xl font-semibold text-primary-900 md:text-2xl;
+    @apply font-primary text-xl font-semibold text-primary-900 md:text-2xl;
   }
   body {
-    @apply text-sm text-primary-900 md:text-base;
+    @apply font-primary text-sm text-primary-900 md:text-base;
   }
   p.heading {
-    @apply text-lg font-semibold text-primary-900 md:text-xl;
+    @apply font-primary text-lg font-semibold text-primary-900 md:text-xl;
   }
   p.content {
-    @apply text-sm font-normal text-primary-900 md:text-lg;
+    @apply font-primary text-sm font-normal text-primary-900 md:text-lg;
   }
   .bg-paper {
     @apply bg-texture bg-primary-300 bg-repeat;
   }
   .font-outline-500-md {
-    -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: var(--clr-primary-500);
   }
   .font-outline-700-md {
-    -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: var(--clr-primary-700);
   }
   .font-outline-900-md {
-    -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: var(--clr-primary-900);
   }
   .font-outline-500-sm {
-    -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--clr-primary-500);
   }
   .font-outline-700-sm {
-    -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--clr-primary-700);
   }
   .font-outline-900-sm {
-    -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--clr-primary-900);
   }
@@ -160,4 +154,17 @@
   .animated-underline:focus-visible {
     background-size: 0 2px, 100% 2px;
   }
+}
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(238, 202, 172);
+  background-image: url('/images/texture.png');
+}
+::-webkit-scrollbar-thumb {
+  background: #ffe9d8;
+  opacity: 0.5;
+  border: 1px solid #3e1c00;
 }
