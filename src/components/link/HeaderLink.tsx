@@ -27,8 +27,9 @@ export default function HeaderLink({
     <Link href={href} {...nextLinkProps}>
       <a
         {...rest}
-        className={clsx(' hover:text-primary-500', {
-          'hover:text-primary-900 bg-primary-300 px-2 font-semibold ': isActive,
+        className={clsx('  hover:text-primary-500', {
+          'hover:text-primary-900 bg-primary-300 px-2 font-semibold hover:shadow-sm ':
+            isActive,
         })}
       >
         {children}

@@ -31,35 +31,35 @@
   }
   @font-face {
     font-family: 'Montserrat';
-    src: url('/fonts/Montserrat/Montserrat-Regular.ttf');
+    src: url('/fonts/Montserrat-Regular.ttf');
     font-style: medium;
     font-weight: 400;
     font-display: swap;
   }
   @font-face {
     font-family: 'Montserrat';
-    src: url('/fonts/Montserrat/Montserrat-Medium.ttf');
+    src: url('/fonts/Montserrat-Medium.ttf');
     font-style: medium;
     font-weight: 500;
     font-display: swap;
   }
   @font-face {
     font-family: 'Montserrat';
-    src: url('/fonts/Montserrat/Montserrat-SemiBold.ttf');
+    src: url('/fonts/Montserrat-SemiBold.ttf');
     font-style: medium;
     font-weight: 600;
     font-display: swap;
   }
   @font-face {
     font-family: 'Montserrat';
-    src: url('/fonts/Montserrat/Montserrat-Bold.ttf');
+    src: url('/fonts/Montserrat-Bold.ttf');
     font-style: medium;
     font-weight: 700;
     font-display: swap;
   }
   @font-face {
     font-family: 'Montserrat';
-    src: url('/fonts/Montserrat/Montserrat-Black.ttf');
+    src: url('/fonts/Montserrat-Black.ttf');
     font-style: medium;
     font-weight: 900;
     font-display: swap;
@@ -89,10 +89,10 @@
     @apply font-primary text-sm text-primary-900 md:text-base;
   }
   p.heading {
-    @apply font-primary text-lg font-semibold text-primary-900 md:text-xl;
+    @apply font-primary text-sm font-bold text-primary-900 md:text-lg;
   }
   p.content {
-    @apply font-primary text-sm font-normal text-primary-900 md:text-lg;
+    @apply font-primary text-sm font-normal text-primary-900 md:text-sm;
   }
   .bg-paper {
     @apply bg-texture bg-primary-300 bg-repeat;
