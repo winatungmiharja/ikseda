@@ -16,18 +16,28 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    boxShadow: {
+      DEFAULT: '2px 2px rgb(var(--tw-clr-primary-800))',
+      sm: '1px 1px rgb(var(--tw-clr-primary-800))',
+      md: '4px 4px rgb(var(--tw-clr-primary-800))',
+      lg: '5px 5px rgb(var(--tw-clr-primary-800))',
+      xl: '8px 8px rgb(var(--tw-clr-primary-800))',
+      '2xl': '10px 10px rgb(var(--tw-clr-primary-800))',
+      '3xl': '12px 12px rgb(var(--tw-clr-primary-800))',
+      none: 'none',
+    },
     extend: {
       backgroundImage: {
         texture: "url('/images/texture.png')",
         shapes: "url('/images/bg-shapes.svg')",
         'shapes-light': "url('/images/bg-shapes-light.svg')",
+        'small-grid': "url('/images/small-grid.svg')",
       },
       fontFamily: {
         primary: ['Montserrat', ...fontFamily.sans],
       },
       colors: {
         primary: {
-          // Customize it on globals.css :root
           100: withOpacity('--tw-clr-primary-100'),
           200: withOpacity('--tw-clr-primary-200'),
           300: withOpacity('--tw-clr-primary-300'),
