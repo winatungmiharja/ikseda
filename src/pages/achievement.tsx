@@ -16,7 +16,7 @@ export default function AchievementPage() {
           <div className='sticky top-0 z-0 w-full md:min-h-screen'>
             <CoverSection />
           </div>
-          <div className='layout flex z-10 flex-col justify-center items-center'>
+          <div className='layout flex relative z-10 flex-col justify-center items-center'>
             <img
               src='/images/rope.svg'
               alt=''

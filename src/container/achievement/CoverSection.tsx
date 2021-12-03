@@ -3,7 +3,7 @@ import * as React from 'react';
 
 export default function CoverSection() {
   return (
-    <div className='p-4 w-full md:p-16'>
+    <div className='layout p-4 w-full md:p-16'>
       <div className=''>
         <h1 className='font-outline-900-sm text-transparent uppercase md:font-outline-900-md'>
           Our
