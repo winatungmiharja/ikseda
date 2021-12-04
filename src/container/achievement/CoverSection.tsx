@@ -1,18 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import * as React from 'react';
 
+import SectionText from '@/components/text/SectionText';
+
 export default function CoverSection() {
   return (
-    <div className='layout p-4 w-full md:p-16'>
-      <div className=''>
-        <h1 className='font-outline-900-sm text-transparent uppercase md:font-outline-900-md'>
-          Our
-        </h1>
-        <h1 className='font-outline-900-sm text-primary-500 uppercase md:font-outline-900-md'>
-          <span className='text-mustard'>Achieve</span>
-          ment
-        </h1>
-      </div>
+    <div className='layout flex flex-col gap-4 p-4 w-full h-full md:gap-0 md:p-16'>
+      <SectionText titleOne='our' titleTwo='achieve' titleThree='ments' />
       <div className='w-full h-full'>
         <img src='/images/achievements.svg' alt='' className='' />
       </div>

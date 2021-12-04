@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
+
+import { motion } from 'framer-motion';
 import * as React from 'react';
 
 import Layout from '@/components/layout/Layout';
@@ -13,19 +15,29 @@ export default function AchievementPage() {
       <Seo templateTitle='Achievement' />
       <main>
         <section className='flex relative flex-col bg-primary-100'>
-          <div className='sticky top-0 z-0 w-full md:min-h-screen'>
+          <div className='min-h-cover flex sticky top-0 z-0 items-center w-full'>
             <CoverSection />
           </div>
-          <div className='layout flex relative z-10 flex-col justify-center items-center'>
+          <motion.div
+            initial={{ y: 100 }}
+            animate={{
+              y: 0,
+              transition: {
+                duration: 0.35,
+                delay: 0.5,
+              },
+            }}
+            className='flex relative z-10 flex-col justify-center items-center lg:layout'
+          >
             <img
               src='/images/rope.svg'
               alt=''
-              className='relative top-4 w-1/5'
+              className='relative top-2 w-1/3 md:top-4 md:w-1/5'
             />
-            <div className='w-full bg-primary-400 border-2 border-primary-900'>
+            <div className='bg-texture w-full bg-primary-400 border-2 border-primary-900'>
               <CardSection />
             </div>
-          </div>
+          </motion.div>
         </section>
       </main>
     </Layout>

@@ -7,11 +7,13 @@ export type UnstyledLinkProps = {
   href: string;
   children: React.ReactNode;
   nextLinkProps?: Omit<LinkProps, 'href'>;
+  className?: string;
 } & React.ComponentPropsWithoutRef<'a'>;
 
 export default function HeaderLink({
   children,
   href,
+  className,
   nextLinkProps,
   ...rest
 }: UnstyledLinkProps) {
@@ -27,10 +29,14 @@ export default function HeaderLink({
     <Link href={href} {...nextLinkProps}>
       <a
         {...rest}
-        className={clsx('  hover:text-primary-500', {
-          'hover:text-primary-900 bg-primary-300 px-2 font-semibold hover:shadow-sm ':
-            isActive,
-        })}
+        className={clsx(
+          '  hover:text-primary-500',
+          {
+            'hover:text-primary-900 bg-primary-300 px-2 font-semibold hover:shadow-sm ':
+              isActive,
+          },
+          className
+        )}
       >
         {children}
       </a>
