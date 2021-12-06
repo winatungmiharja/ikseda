@@ -19,9 +19,9 @@ export default function Button() {
     <div className='flex justify-center w-full md:justify-start'>
       <motion.button
         variants={fadeInUp}
-        className='px-6 py-2 text-xl bg-primary-500 border border-black'
+        className='px-4 py-1 bg-primary-500 border border-black md:px-6 md:py-2 md:text-xl'
       >
-        <h3 className='text-white'>Tentang Kami</h3>
+        <h3 className='text-lg text-white md:text-2xl'>Tentang Kami</h3>
       </motion.button>
     </div>
   );

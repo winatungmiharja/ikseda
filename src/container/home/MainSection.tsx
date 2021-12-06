@@ -23,7 +23,7 @@ const fadeInUp = {
 
 export default function MainSection() {
   return (
-    <div className='layout flex flex-col items-center pt-4 space-y-6 min-h-screen md:flex-row md:pt-0 md:space-y-0'>
+    <div className='layout min-h-main flex flex-col justify-center items-center space-y-6 md:flex-row md:pt-0 md:space-y-0'>
       <div className='flex-grow-0 flex-shrink-0 space-y-4'>
         <TitleText titleOne='IKSEDA' titleTwo='FIB' titleThree='UI' />
         <ParagraphSection />
