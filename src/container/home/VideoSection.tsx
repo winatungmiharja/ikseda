@@ -1,12 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 
 import * as React from 'react';
+import ReactPlayer from 'react-player';
 
 export default function VideoSection() {
   return (
-    <div className='overflow-hidden py-16 bg-primary-400'>
+    <div className='overflow-hidden bg-primary-400'>
       <div className='bg-video-grid p-16 bg-contain md:p-0'>
-        <div className='layout flex relative flex-col justify-center items-center w-full md:min-h-main'>
+        <div className='layout flex relative flex-col justify-center items-center md:min-h-main'>
           <div className='relative'>
             <img src='/images/video-frame.svg' alt='' className='w-full' />
             <img
@@ -23,7 +24,13 @@ export default function VideoSection() {
                 width: '92%',
               }}
             >
-              Video
+              <ReactPlayer
+                width={'100%'}
+                height={'100%'}
+                url='https://www.youtube.com/watch?v=eSakB6M8sWQ&t=2'
+                controls={true}
+                light={true}
+              />
             </div>
           </div>
         </div>
