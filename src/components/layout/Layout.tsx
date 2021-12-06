@@ -3,6 +3,8 @@ import * as React from 'react';
 
 import Header from '@/components/layout/Header';
 
+import Footer from './Footer';
+
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
@@ -10,6 +12,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate'>
         {children}
       </motion.div>
+      <Footer />
     </>
   );
 }
