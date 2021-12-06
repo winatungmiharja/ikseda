@@ -27,14 +27,6 @@ const fadeInUp = {
   },
 };
 
-const stagger = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
-
 export default function TitleText({
   titleOne,
   titleTwo,
@@ -44,24 +36,18 @@ export default function TitleText({
   return (
     <>
       <motion.div
-        variants={stagger}
+        variants={fadeInUp}
         className={clsx('flex flex-col items-center space-y-1 md:items-start', {
           'md:items-start': align === 'start',
           'md:items-center': align === 'center',
         })}
       >
-        <motion.h1
-          variants={fadeInUp}
-          className='font-outline-900-sm text-transparent uppercase md:font-outline-900-md'
-        >
+        <h1 className='font-outline-900-sm text-transparent uppercase md:font-outline-900-md'>
           {titleOne}
           <span className='text-primary-500'> {titleTwo}</span>
           <span className='text-primary-500'> {titleThree}</span>
-        </motion.h1>
-        <motion.div
-          variants={fadeInUp}
-          className='py-1 w-56 bg-primary-500 md:w-96'
-        ></motion.div>
+        </h1>
+        <div className='py-1 w-56 bg-primary-500 md:w-96'></div>
       </motion.div>
     </>
   );
