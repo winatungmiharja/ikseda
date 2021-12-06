@@ -6,8 +6,8 @@ import ReactPlayer from 'react-player';
 export default function VideoSection() {
   return (
     <div className='overflow-hidden bg-primary-400'>
-      <div className='bg-video-grid p-16 bg-contain md:p-0'>
-        <div className='layout flex relative flex-col justify-center items-center md:min-h-main'>
+      <div className='bg-video-grid bg-contain md:p-0'>
+        <div className='layout min-h-main flex relative flex-col justify-center items-center'>
           <div className='relative'>
             <img src='/images/video-frame.svg' alt='' className='w-full' />
             <img
