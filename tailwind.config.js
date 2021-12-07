@@ -16,6 +16,16 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    dropShadow: {
+      DEFAULT: '2px 2px rgb(var(--tw-clr-primary-800))',
+      sm: '1px 1px rgb(var(--tw-clr-primary-800))',
+      md: '2px 2px rgb(var(--tw-clr-primary-800))',
+      lg: '5px 5px rgb(var(--tw-clr-primary-800))',
+      xl: '8px 8px rgb(var(--tw-clr-primary-800))',
+      '2xl': '10px 10px rgb(var(--tw-clr-primary-800))',
+      '3xl': '12px 12px rgb(var(--tw-clr-primary-800))',
+      none: 'none',
+    },
     boxShadow: {
       DEFAULT: '2px 2px rgb(var(--tw-clr-primary-800))',
       sm: '1px 1px rgb(var(--tw-clr-primary-800))',
@@ -25,6 +35,7 @@ module.exports = {
       '2xl': '10px 10px rgb(var(--tw-clr-primary-800))',
       '3xl': '12px 12px rgb(var(--tw-clr-primary-800))',
       none: 'none',
+      inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
     },
     extend: {
       backgroundImage: {
@@ -56,6 +67,16 @@ module.exports = {
         mustard: '#FDCE4A',
       },
       keyframes: {
+        'custom-bounce': {
+          '0%, 100%': {
+            transform: 'translateY(-5%)',
+            animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)',
+          },
+          '50%': {
+            transform: 'translateY(0)',
+            animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)',
+          },
+        },
         flicker: {
           '0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100%': {
             opacity: 0.99,
@@ -70,6 +91,8 @@ module.exports = {
       },
       animation: {
         flicker: 'flicker 3s linear infinite',
+        'custom-bounce':
+          'custom-bounce 1.5s cubic-bezier(0.8, 0, 1, 1) infinite',
       },
     },
   },

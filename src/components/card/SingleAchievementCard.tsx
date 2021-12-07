@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-import CarouselWithThumbnail from '@/components/carousel/CarouselWithThumbnail';
+import { AchievementType } from '@/lib/type';
 
-import { AchievementType } from './CardSection';
+import NextImage from '@/components/NextImage';
 
 const formatDriveUrl = (data: string): string => {
   const first = data.indexOf('/d/') + 3;
@@ -11,10 +11,7 @@ const formatDriveUrl = (data: string): string => {
   return `https://drive.google.com/uc?export=view&id=${result}`;
 };
 
-const formateImageArray = (data: string[]): string[] =>
-  data.map((item) => formatDriveUrl(item));
-
-export default function MultipleAchievementCard({
+export default function SingleAchievementCard({
   value,
 }: {
   value: AchievementType;
@@ -22,7 +19,13 @@ export default function MultipleAchievementCard({
   return (
     <div className='p-4 bg-primary-100 border-2 border-primary-900 shadow'>
       <div className='bg-small-grid p-8 pb-0 bg-top bg-no-repeat bg-contain'>
-        <CarouselWithThumbnail images={formateImageArray(value.img)} />
+        <NextImage
+          className='w-full border-2 border-primary-900 shadow-sm'
+          src={formatDriveUrl(value.img[0])}
+          alt=''
+          width={602}
+          height={752}
+        />
       </div>
       <div className='p-4'>
         <p className='heading'>{value.title}</p>

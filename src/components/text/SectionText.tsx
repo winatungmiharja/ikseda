@@ -5,6 +5,7 @@ type SectionTextType = {
   titleOne: string;
   titleTwo?: string;
   titleThree?: string;
+  titleFour?: string;
 };
 
 const fadeInUp = {
@@ -32,6 +33,7 @@ export default function SectionText({
   titleOne,
   titleTwo,
   titleThree,
+  titleFour,
 }: SectionTextType) {
   return (
     <>
@@ -41,14 +43,17 @@ export default function SectionText({
           className='font-outline-900-sm text-transparent uppercase md:font-outline-900-md'
         >
           {titleOne}
+          <span className='font-outline-900-sm text-primary-500 md:font-outline-900-md'>
+            {titleTwo}
+          </span>
         </motion.h1>
 
         <motion.h1
           variants={fadeInUp}
           className='font-outline-900-sm text-primary-500 uppercase md:font-outline-900-md'
         >
-          <span className='text-mustard'>{titleTwo}</span>
-          {titleThree}
+          <span className='text-mustard'>{titleThree}</span>
+          {titleFour}
         </motion.h1>
       </motion.div>
     </>
