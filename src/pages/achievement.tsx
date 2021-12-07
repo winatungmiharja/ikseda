@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 
-import { motion } from 'framer-motion';
 import * as React from 'react';
 
 import Layout from '@/components/layout/Layout';
@@ -18,17 +17,7 @@ export default function AchievementPage() {
           <div className='min-h-cover flex sticky top-0 z-0 items-center w-full'>
             <CoverSection />
           </div>
-          <motion.div
-            initial={{ y: 100 }}
-            animate={{
-              y: 0,
-              transition: {
-                duration: 0.35,
-                delay: 0.5,
-              },
-            }}
-            className='flex relative z-10 flex-col justify-center items-center lg:layout'
-          >
+          <div className='flex relative z-10 flex-col justify-center items-center lg:layout'>
             <img
               src='/images/rope.svg'
               alt=''
@@ -37,7 +26,7 @@ export default function AchievementPage() {
             <div className='bg-texture w-full bg-primary-400 border-2 border-primary-900'>
               <CardSection />
             </div>
-          </motion.div>
+          </div>
         </section>
       </main>
     </Layout>
