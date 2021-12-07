@@ -5,7 +5,7 @@ import { ProkerType } from '@/lib/type';
 export default function ProkerCard({ value }: { value: ProkerType }) {
   return (
     <div
-      className='bg-teal flex-shrink-0 p-8 border-2 border-primary-900 shadow-sm hover:shadow'
+      className='bg-teal flex-shrink-0 p-4 w-56 border-2 border-primary-900 shadow-sm md:p-8 md:w-1/3 hover:shadow'
       style={{ minWidth: 'calc(100%/3)' }}
     >
       <div className='flex gap-2 items-center'>

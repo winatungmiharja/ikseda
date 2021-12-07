@@ -14,7 +14,7 @@ export default function KepengurusanSection() {
         <TitleText
           titleOne={dataKepengurusanSection.firstTitle}
           titleTwo={` ` + dataKepengurusanSection.secondTitle}
-          className='z-10 text-primary-100'
+          className='z-10 text-center text-primary-100'
         />
         <div className='flex relative flex-col items-center w-full'>
           <div className='grid relative grid-cols-1 gap-4 w-full md:grid-cols-2 lg:gap-16 lg:max-w-xl'>

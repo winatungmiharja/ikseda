@@ -8,5 +8,5 @@ export const aboutData: AboutType = {
     'Memfasilitasi pengembangan minat bakat anggota IKSEDA dan merecruit serta training atlet dan seniman IKSEDA',
     'Menguatkan media aspirasi untuk kepengurusan IKSEDA',
   ],
-  visi: 'Menjadikan Ikseda organisasi yang sinergis, kolaboratif, progresifdan inovatif',
+  visi: 'Menjadikan Ikseda organisasi yang sinergis, kolaboratif, progresif dan inovatif',
 };

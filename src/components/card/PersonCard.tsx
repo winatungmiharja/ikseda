@@ -13,7 +13,11 @@ export default function PersonCard({
 }: PersonType) {
   return (
     <div className='relative border-2 border-primary-900 divide-x-0 divide-y-2 divide-primary-900 shadow-sm transition-all duration-150 ease-in-out hover:shadow-md'>
-      <img src={img} alt='' className='w-full' />
+      <img
+        src={img}
+        alt=''
+        className='object-cover w-full max-h-60 md:max-h-full'
+      />
       <div
         className={clsx(
           'p-2',

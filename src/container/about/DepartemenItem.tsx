@@ -18,7 +18,7 @@ export default function DepartemenItem({
   return (
     <div id={value.url} className='py-16 w-full'>
       <div className='flex flex-col gap-8 justify-center items-center'>
-        <h2 className='font-outline-900-sm text-teal text-4xl'>
+        <h2 className='font-outline-900-sm text-teal text-3xl md:text-4xl'>
           0{id + 1}.{value.title}
         </h2>
         <div className='grid relative grid-cols-1 gap-4 w-full md:grid-cols-2 lg:gap-16 lg:max-w-xl'>
@@ -59,7 +59,7 @@ export default function DepartemenItem({
               alt=''
               className='absolute right-0 bottom-0 w-6 translate-x-1/4 translate-y-1/4'
             />
-            <div className='bg-paper grid grid-cols-1 gap-x-8 p-8 w-full border-2 border-primary-900 shadow-inner md:grid-cols-3'>
+            <div className='bg-paper grid grid-cols-1 gap-x-8 p-4 w-full border-2 border-primary-900 shadow-inner md:grid-cols-3 md:p-8'>
               {value.staff.map((person, i) => (
                 <p key={i} className='text-base font-medium text-center'>
                   {person}
@@ -73,7 +73,7 @@ export default function DepartemenItem({
             {dataDepartemenSection.prokerTitle}
           </h2>
           <div className='relative p-1 w-full border border-primary-900 border-dashed'>
-            <div className='bg-paper flex overflow-x-scroll gap-x-8 p-8 border-2 border-primary-900'>
+            <div className='bg-paper flex overflow-x-scroll gap-x-8 p-4 border-2 border-primary-900 md:p-8'>
               {value.proker.map((item, i) => (
                 <ProkerCard key={i} value={item} />
               ))}

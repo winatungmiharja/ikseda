@@ -75,7 +75,7 @@
   }
 
   h2 {
-    @apply font-primary text-3xl font-black text-primary-900 md:text-5xl;
+    @apply font-primary text-4xl font-black text-primary-900 md:text-5xl;
   }
 
   h3 {

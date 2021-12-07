@@ -27,16 +27,16 @@ export default function DepartemenSection() {
           }
         )}
       >
-        <div className='layout flex flex-col items-center'>
+        <div className='layout flex relative flex-col items-center'>
           <TitleText
             titleOne={dataDepartemenSection.firstTitle}
             titleTwo={dataDepartemenSection.secondTitle}
-            className='z-10 text-primary-300'
+            className='z-10 text-center text-primary-300'
           />
           <img
             src='/images/sparkle.svg'
             alt='sparkle'
-            className='absolute left-1/2 w-4'
+            className='absolute right-20 z-20 w-4 md:right-1/2'
           />
           <div className='flex flex-col w-full divide-y-2 divide-primary-900'>
             {dataDepartemenDanBiro.map((item, i) => (
