@@ -43,6 +43,7 @@ module.exports = {
         shapes: "url('/images/bg-shapes.svg')",
         'shapes-light': "url('/images/bg-shapes-light.svg')",
         'small-grid': "url('/images/small-grid.svg')",
+        'video-grid': "url('/images/video-grid.svg')",
       },
       fontFamily: {
         primary: ['Montserrat', ...fontFamily.sans],

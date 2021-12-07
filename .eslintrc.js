@@ -16,6 +16,7 @@ module.exports = {
     'no-unused-vars': 'off',
     'no-console': 'warn',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@next/next/no-document-import-in-page': 'off',
 
     // Sort
     'simple-import-sort/exports': 'warn',
