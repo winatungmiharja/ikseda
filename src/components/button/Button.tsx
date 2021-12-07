@@ -20,7 +20,7 @@ export default function Button() {
     <div className='flex justify-center w-full md:justify-start'>
       <motion.button
         variants={fadeInUp}
-        className='px-4 py-1 bg-primary-500 border border-primary-900 shadow-md md:px-6 md:py-2 md:text-xl'
+        className='px-4 py-1 bg-primary-500 border border-primary-900 shadow transition-all duration-150 ease-in-out md:px-6 md:py-2 md:text-xl hover:shadow-md'
       >
         <Link href='/about'>
           <a className='text-lg font-semibold text-white md:text-2xl'>

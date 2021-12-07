@@ -9,9 +9,10 @@ import HeaderLink from '../link/HeaderLink';
 const links = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About Us' },
-  { href: '/apaini', label: 'High-Achiever Data' },
+  { href: '/dataprestasi', label: 'High-Achiever Data' },
   { href: '/achievement', label: 'Achievement' },
   { href: '/contact', label: 'Contact Us' },
+  { href: '/contact', label: 'Calendar' },
 ];
 
 export default function Header() {

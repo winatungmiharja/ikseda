@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import * as React from 'react';
 
 import Button from '@/components/button/Button';
-import TitleText from '@/components/text/TitleText';
+import SectionText from '@/components/text/SectionText';
 
 import ParagraphSection from './ParagraphSection';
 
@@ -23,15 +23,28 @@ const fadeInUp = {
 
 export default function MainSection() {
   return (
-    <div className='layout min-h-main flex flex-col justify-center items-center space-y-6 md:flex-row md:pt-0 md:space-y-0'>
-      <div className='flex-grow-0 flex-shrink-0 space-y-4'>
-        <TitleText titleOne='IKSEDA' titleTwo='FIB' titleThree='UI' />
+    <div className='layout min-h-main flex flex-wrap gap-y-4 justify-center items-center'>
+      <div className='flex flex-col gap-4 w-full md:w-7/12'>
+        <div>
+          <SectionText titleOne='IKSEDA' titleTwo=' FIB UI' />
+          <motion.div
+            initial={{ width: 0 }}
+            animate={{
+              width: '60%',
+              transition: {
+                duration: 0.6,
+                ease: [0.6, -0.05, 0.01, 0.99],
+              },
+            }}
+            className='w-9/12 h-1 bg-primary-500'
+          ></motion.div>
+        </div>
         <ParagraphSection />
         <Button />
       </div>
       <motion.div
         variants={fadeInUp}
-        className='layout flex relative z-10 flex-col justify-center items-center'
+        className='flex relative flex-col justify-center items-center w-8/12 md:w-5/12'
       >
         <img src='/images/ikseda-computer.svg' alt='komputerIkseda' />
       </motion.div>
