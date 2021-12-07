@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import * as React from 'react';
 
+import Footer from '@/components/layout/Footer';
 import Header from '@/components/layout/Header';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -10,6 +11,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate'>
         {children}
       </motion.div>
+      <Footer />
     </>
   );
 }
