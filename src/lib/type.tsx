@@ -38,3 +38,8 @@ export type PersonType = {
   color?: 'teal' | 'mustard' | 'magenta' | 'orange' | 'brown' | 'navy';
   img: string;
 };
+
+export type CalendarType = {
+  month: string;
+  img: string;
+};
