@@ -19,12 +19,15 @@
     },
     "incremental": true
   },
+  "exclude": [
+    "node_modules",
+    "node_modules/react-dropzone-uploader/dist/Dropzone.tsx"
+  ],
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     "src/components/button/Button.tsxs"
   ],
-  "exclude": ["node_modules", "node_modules/*"],
   "moduleResolution": ["node_modules", ".next", "node"]
 }
