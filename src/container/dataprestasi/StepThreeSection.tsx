@@ -6,7 +6,6 @@ import { AiOutlineArrowLeft, AiOutlineSend } from 'react-icons/ai';
 import { StepThreeType } from '@/lib/type';
 
 import Button from '@/components/button/Button';
-import FileInput from '@/components/input/FileInput';
 import Input from '@/components/input/Input';
 import Step from '@/components/step/Step';
 
@@ -125,7 +124,7 @@ export default function StepOneSection({ setStep, step }: SectionType) {
             />
           </div>
           <div className='grid'>
-            <FileInput
+            {/* <FileInput
               id='undangan'
               label={'Foto/Scan Undangan Lomba/Kompetisi/Penghargaan'}
             />
@@ -138,7 +137,7 @@ export default function StepOneSection({ setStep, step }: SectionType) {
             <FileInput
               id='undangan'
               label={'Foto Dokumentasi Upacara Penyerahan Penghargaan/Awarding'}
-            />
+            /> */}
           </div>
 
           <div className='flex justify-between mt-auto'>

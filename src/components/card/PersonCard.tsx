@@ -16,7 +16,7 @@ export default function PersonCard({
       <img
         src={img}
         alt=''
-        className='object-cover w-full max-h-60 md:max-h-full'
+        className='aspect-[2/1] object-cover w-full md:aspect-[3/4]'
       />
       <div
         className={clsx(
