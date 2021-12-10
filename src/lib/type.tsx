@@ -38,3 +38,41 @@ export type PersonType = {
   color?: 'teal' | 'mustard' | 'magenta' | 'orange' | 'brown' | 'navy';
   img: string;
 };
+
+export type CalendarType = {
+  month: string;
+  img: string;
+};
+
+export type StepOneType = {
+  email: string;
+  pengisi: string;
+  nama: string;
+  line: string;
+  npm: string;
+  hp: string;
+  jurusan: string;
+  angkatan: string;
+  kegiatan: string;
+};
+
+export type StepTwoType = {
+  keikutsertaan: string;
+  tim: string;
+  kategori: string;
+  pesertaNasional: string;
+  pesertaInternasional: string;
+  namaKegiatan: string;
+  jumlahPeserta: string;
+  penyelenggara: string;
+  website: string;
+};
+
+export type StepThreeType = {
+  pencapaian: string;
+  tanggalMulai: Date | null;
+  tanggalAkhir: Date | null;
+  undangan: File | null;
+  sertifikat: File | null;
+  dokumentasi: File | null;
+};

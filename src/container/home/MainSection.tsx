@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import * as React from 'react';
 
-import Button from '@/components/button/Button';
+import LandingButton from '@/components/button/LandingButton';
 import SectionText from '@/components/text/SectionText';
 
 import ParagraphSection from './ParagraphSection';
@@ -40,7 +40,7 @@ export default function MainSection() {
           ></motion.div>
         </div>
         <ParagraphSection />
-        <Button />
+        <LandingButton />
       </div>
       <motion.div
         variants={fadeInUp}
