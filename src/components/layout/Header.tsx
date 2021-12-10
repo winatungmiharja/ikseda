@@ -12,7 +12,7 @@ const links = [
   { href: '/dataprestasi', label: 'High-Achiever Data' },
   { href: '/achievement', label: 'Achievement' },
   { href: '/contact', label: 'Contact Us' },
-  { href: '/contact', label: 'Calendar' },
+  { href: '/calendar', label: 'Calendar' },
 ];
 
 export default function Header() {
