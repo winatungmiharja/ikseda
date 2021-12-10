@@ -48,6 +48,8 @@ export default function Input({
         {...register(id, validation)}
         {...rest}
         className={clsx(
+          'file:bg-primary-300 file:border file:border-dashed file:border-primary-900 file:hover:bg-primary-500 file:hover:text-primary-100 file:mr-2 file:shadow-inner',
+
           {
             'cursor-not-allowed bg-primary-200/30': readOnly,
           },

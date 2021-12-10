@@ -15,7 +15,7 @@ export default function AboutPage() {
     <Layout>
       <Seo templateTitle='About' />
       <main>
-        <section className='bg-shapes-light flex relative flex-col bg-primary-100 bg-contain'>
+        <section className='flex relative flex-col bg-primary-100'>
           <div className='min-h-main flex sticky top-0 z-0 items-center w-full'>
             <CoverSection />
           </div>

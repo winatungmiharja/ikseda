@@ -12,7 +12,7 @@ export default function DataPrestasiPage() {
   return (
     <Layout>
       <Seo templateTitle='High Achiever Data' />
-      <main className='flex relative flex-col bg-primary-100 lg:py-16'>
+      <main className='bg-shapes-light flex relative flex-col bg-primary-100 bg-contain lg:py-16'>
         <section className='layout overflow-x-hidden p-4 w-full md:overflow-x-visible md:gap-0 md:p-16 lg:p-0'>
           <div className='min-h-cover flex z-0 items-center w-full'>
             <CoverSection />

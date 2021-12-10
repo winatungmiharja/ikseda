@@ -20,7 +20,7 @@ export type SectionType = {
 };
 
 export default function InputPrestasi() {
-  const [step, setStep] = React.useState<number>(4);
+  const [step, setStep] = React.useState<number>(1);
 
   const store = useData();
   const resetData = () => {

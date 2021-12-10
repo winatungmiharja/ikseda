@@ -11,10 +11,8 @@ export default function HomePage() {
     <Layout>
       <Seo />
       <main>
-        <section className='flex relative flex-col bg-primary-100 border-b-2 border-primary-600'>
+        <section className='flex relative flex-col bg-primary-100 divide-y-2 divide-primary-600'>
           <MainSection />
-        </section>
-        <section>
           <VideoSection />
         </section>
       </main>

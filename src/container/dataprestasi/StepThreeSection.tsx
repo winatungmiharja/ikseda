@@ -123,22 +123,30 @@ export default function StepOneSection({ setStep, step }: SectionType) {
               validation={{ required: true }}
             />
           </div>
-          <div className='grid'>
-            {/* <FileInput
-              id='undangan'
-              label={'Foto/Scan Undangan Lomba/Kompetisi/Penghargaan'}
-            />
-            <FileInput
-              id='undangan'
-              label={
-                'Foto Asli Sertifikat/Piala/Medali yang Diberikan oleh Penyelenggara'
-              }
-            />
-            <FileInput
-              id='undangan'
-              label={'Foto Dokumentasi Upacara Penyerahan Penghargaan/Awarding'}
-            /> */}
-          </div>
+
+          <Input
+            type='file'
+            accept='image'
+            id={'undangan'}
+            label={'Foto/Scan Undangan Lomba/Kompetisi/Penghargaan'}
+            validation={{ required: true }}
+          />
+          <Input
+            type='file'
+            accept='image'
+            id={'sertifikat'}
+            label={
+              'Foto Asli Sertifikat/Piala/Medali yang Diberikan oleh Penyelenggara'
+            }
+            validation={{ required: true }}
+          />
+          <Input
+            type='file'
+            accept='image'
+            id={'dokumentasi'}
+            label={'Foto Dokumentasi Upacara Penyerahan Penghargaan/Awarding'}
+            validation={{ required: true }}
+          />
 
           <div className='flex justify-between mt-auto'>
             <Button onClick={() => setStep(step - 1)}>

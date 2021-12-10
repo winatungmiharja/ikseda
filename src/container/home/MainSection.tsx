@@ -8,23 +8,10 @@ import SectionText from '@/components/text/SectionText';
 
 import ParagraphSection from './ParagraphSection';
 
-const fadeInUp = {
-  initial: {
-    y: 60,
-  },
-  animate: {
-    y: 0,
-    transition: {
-      duration: 0.6,
-      ease: [0.6, -0.05, 0.01, 0.99],
-    },
-  },
-};
-
 export default function MainSection() {
   return (
-    <div className='layout min-h-main flex flex-wrap gap-y-4 justify-center items-center'>
-      <div className='flex flex-col gap-4 w-full md:w-7/12'>
+    <div className='layout min-h-main flex relative flex-wrap p-4 w-full md:pt-16 lg:pt-0'>
+      <div className='flex flex-col gap-4 justify-center w-full lg:w-6/12'>
         <div>
           <SectionText titleOne='IKSEDA' titleTwo=' FIB UI' />
           <motion.div
@@ -42,12 +29,9 @@ export default function MainSection() {
         <ParagraphSection />
         <LandingButton />
       </div>
-      <motion.div
-        variants={fadeInUp}
-        className='flex relative flex-col justify-center items-center w-8/12 md:w-5/12'
-      >
+      <div className='flex items-start mt-auto ml-auto w-11/12 lg:items-center lg:ml-0 lg:w-6/12'>
         <img src='/images/ikseda-computer.svg' alt='komputerIkseda' />
-      </motion.div>
+      </div>
     </div>
   );
 }

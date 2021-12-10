@@ -73,7 +73,7 @@ export default function DepartemenItem({
             {dataDepartemenSection.prokerTitle}
           </h2>
           <div className='relative p-1 w-full border border-primary-900 border-dashed'>
-            <div className='bg-paper flex overflow-x-scroll gap-x-8 p-4 border-2 border-primary-900 md:p-8'>
+            <div className='bg-paper scroll-s snap-x flex overflow-x-scroll gap-x-8 p-4 border-2 border-primary-900 md:p-8'>
               {value.proker.map((item, i) => (
                 <ProkerCard key={i} value={item} />
               ))}

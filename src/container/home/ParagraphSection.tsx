@@ -17,7 +17,7 @@ export default function ParagraphSection() {
 
   return (
     <>
-      <motion.div variants={fadeInUp} className='text-center md:text-left'>
+      <motion.div variants={fadeInUp} className='text-left'>
         <h4>
           Ikatan Kekeluargaan Studi Belanda <br />
           Fakultas Ilmu Pengetahuan Budaya <br />

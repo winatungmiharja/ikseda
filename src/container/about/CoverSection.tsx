@@ -7,7 +7,7 @@ import SectionText from '@/components/text/SectionText';
 
 export default function CoverSection() {
   return (
-    <div className='layout min-h-main flex relative flex-wrap p-4 w-full md:pt-16 lg:pt-0'>
+    <div className='bg-shapes-light layout min-h-main flex relative flex-wrap p-4 w-full bg-contain md:pt-16 lg:pt-0'>
       <div className='flex flex-col gap-4 justify-center w-full lg:w-7/12'>
         <SectionText titleOne='about' titleTwo=' us' />
         <div className='bg-primary-400'>
