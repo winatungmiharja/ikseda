@@ -14,8 +14,8 @@ export default function CoverSection() {
         titleTwo={dataCalendarSection.secondTitle}
         titleThree={dataCalendarSection.thirdTitle}
       />
-      <div className='overflow-hidden w-full translate-x-8 md:w-11/12 md:translate-x-1/4'>
-        <img src='/images/calendar.svg' alt='calendar' />
+      <div className='overflow-hidden w-full'>
+        <img src='/images/calendar.svg' alt='calendar' className='w-full' />
       </div>
     </div>
   );

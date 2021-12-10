@@ -1,33 +1,80 @@
-import { motion } from 'framer-motion';
-import Link from 'next/link';
+import clsx from 'clsx';
 import * as React from 'react';
+import { ImSpinner5 } from 'react-icons/im';
 
-export default function Button() {
-  const fadeInUp = {
-    initial: {
-      y: 60,
-    },
-    animate: {
-      y: 0,
-      transition: {
-        duration: 0.6,
-        ease: [0.6, -0.05, 0.01, 0.99],
-      },
-    },
-  };
+type ButtonProps = {
+  children: React.ReactNode;
+  disabled?: boolean;
+  isLoading?: boolean;
+  className?: string;
+  variants?: 'primary' | 'secondary';
+  dotted?: boolean;
+  icon?: React.ReactNode;
+} & React.ComponentPropsWithoutRef<'button'>;
 
+export default function Button({
+  children,
+  disabled = false,
+  isLoading = false,
+  className,
+  variants = 'primary',
+  dotted = true,
+  icon,
+  ...rest
+}: ButtonProps) {
   return (
-    <div className='flex justify-center w-full md:justify-start'>
-      <motion.button
-        variants={fadeInUp}
-        className='px-4 py-1 bg-primary-500 border border-primary-900 shadow transition-all duration-150 ease-in-out md:px-6 md:py-2 md:text-xl hover:shadow-md'
-      >
-        <Link href='/about'>
-          <a className='text-lg font-semibold text-white md:text-2xl'>
-            Tentang Kami
-          </a>
-        </Link>
-      </motion.button>
-    </div>
+    <button
+      {...rest}
+      disabled={isLoading || disabled}
+      className={clsx(
+        'inline-block relative flex-shrink-0 p-0.5 font-semibold rounded-sm',
+        'focus:ring-1 focus:ring-primary-900 focus:outline-none',
+        'text-white disabled:cursor-not-allowed',
+        {
+          'bg-gray-300 text-gray-400 hover:bg-gray-300': disabled,
+        },
+        {
+          'bg-teal  hover:bg-navy  ': variants === 'primary',
+          'bg-mustard  hover:bg-primary-500 ': variants === 'secondary',
+        },
+        {
+          'relative !text-transparent hover:text-transparent !cursor-wait transition-none':
+            isLoading,
+        },
+
+        className
+      )}
+    >
+      {dotted ? (
+        <div
+          className={clsx(
+            'flex items-center px-6 py-1 h-full rounded-sm border border-primary-100 border-dashed',
+            className
+          )}
+        >
+          {isLoading && (
+            <div className='absolute top-1/2 left-1/2 text-white -translate-x-1/2 -translate-y-1/2'>
+              <ImSpinner5 className='animate-spin' />
+            </div>
+          )}
+          <div className='flex gap-2 justify-center items-center'>
+            {children}
+            {icon ?? ''}
+          </div>
+        </div>
+      ) : (
+        <div className={clsx('flex items-center px-6 py-1 h-full')}>
+          {isLoading && (
+            <div className='absolute top-1/2 left-1/2 text-white -translate-x-1/2 -translate-y-1/2'>
+              <ImSpinner5 className='animate-spin' size={25} />
+            </div>
+          )}
+          <div className='flex gap-2 justify-center items-center'>
+            {children}
+            {icon ?? ''}
+          </div>
+        </div>
+      )}
+    </button>
   );
 }
