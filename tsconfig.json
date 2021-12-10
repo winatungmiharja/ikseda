@@ -23,9 +23,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/components/button/Button.tsxs",
-    "node_modules/*"
+    "src/components/button/Button.tsxs"
   ],
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules", "node_modules/*"],
   "moduleResolution": ["node_modules", ".next", "node"]
 }
