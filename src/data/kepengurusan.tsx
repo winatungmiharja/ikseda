@@ -46,6 +46,6 @@ export const dataKepengurusan: PersonType[] = [
     name: 'Mabelle Faiza Anindra (2019)',
     type: 'light',
     color: 'teal',
-    img: 'https://res.cloudinary.com/etzy/image/upload/v1639538550/asset/PI/Mandataris/Belle.heic',
+    img: 'https://res.cloudinary.com/etzy/image/upload/v1639538550/asset/PI/Mandataris/Belle.jpg',
   },
 ];
