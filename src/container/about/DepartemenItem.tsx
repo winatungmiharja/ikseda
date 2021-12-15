@@ -25,7 +25,7 @@ export default function DepartemenItem({
           {value.mandataris.map((item, i) => (
             <PersonCard
               key={i}
-              status={`Mandataris ${i + 1}`}
+              status={item.status}
               name={item.name}
               color={item.color}
               type={item.type}

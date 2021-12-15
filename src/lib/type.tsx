@@ -1,6 +1,6 @@
 export type ProkerType = {
   title: string;
-  content: string;
+  content?: string;
   icon: React.ReactNode;
 };
 
