@@ -152,7 +152,9 @@ export default function Footer() {
                   <a className='text-base text-primary-100'>@WUH9969L</a>
                 </li>
                 <li>
-                  <a className='text-base text-primary-100'>@iksedafibui</a>
+                  <a className='text-base text-primary-100'>
+                    ikseda.fib.ui@gmail.com
+                  </a>
                 </li>
               </ul>
             </div>
