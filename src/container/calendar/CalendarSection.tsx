@@ -15,6 +15,9 @@ export default function CalendarSection() {
       setOpenedCalendar('');
     } else {
       setOpenedCalendar(name);
+      setTimeout(function () {
+        document.getElementById(name)?.scrollIntoView(true);
+      }, 150);
     }
   }
 
@@ -24,18 +27,19 @@ export default function CalendarSection() {
         {dataCalendar.map((item) => (
           <>
             <div
-              className='flex justify-between px-5 py-6 bg-primary-500 border-2 border-primary-900 cursor-pointer md:px-10 hover:text-primary-200'
+              className='flex justify-between items-center px-5 py-6 bg-primary-500 border-2 border-primary-900 cursor-pointer md:px-10 hover:text-primary-200'
+              id={item.month}
               key={item.month}
               onClick={() => openCalendar(item.month)}
             >
               <SectionText titleOne='' titleThree={item.month} />
               <BsDashCircleFill
-                className={clsx('text-3xl md:text-6xl', {
+                className={clsx('text-3xl ', {
                   hidden: OpenedCalendar === item.month,
                 })}
               />
               <BsPlusCircleFill
-                className={clsx('text-3xl md:text-6xl', {
+                className={clsx('text-3xl ', {
                   hidden: OpenedCalendar !== item.month,
                   active: OpenedCalendar === item.month,
                 })}
@@ -43,13 +47,24 @@ export default function CalendarSection() {
             </div>
             <div
               className={clsx(
-                'max-h-full bg-primary-300 border-2 border-primary-900',
+                'overflow-hidden bg-primary-300 border-r-2 border-l-2 border-primary-900 transition-all duration-150',
                 {
-                  hidden: OpenedCalendar !== item.month,
+                  'max-h-0': OpenedCalendar !== item.month,
+                  'max-h-screen': OpenedCalendar === item.month,
                 }
               )}
             >
-              <img src={item.img} alt={item.month} className='mx-auto' />
+              <img
+                src={item.img}
+                alt={item.month}
+                className={clsx(
+                  'mx-auto w-min transition-all duration-150 ease-in-out md:h-screen',
+                  {
+                    '-translate-x-full': OpenedCalendar !== item.month,
+                    'opacity-100': OpenedCalendar === item.month,
+                  }
+                )}
+              />
             </div>
           </>
         ))}
