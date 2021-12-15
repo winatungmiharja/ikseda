@@ -12,17 +12,15 @@ const highAchieverData: HighAchieverDataType = {
   desc: (
     <>
       <p>
-        Pertama-tama, kami ucapkan selamat kepada kalian yang sudah mengharumkan
-        nama FEB UI di kancah regional, nasional, maupun internasional. Dalam
-        rangka penilaian Pemeringkatan oleh Kemenristekdikti, kami meminta
-        kepada seluruh High Achievers FEB UI yang telah meraih prestasi untuk
-        mengisi formulir ini, baik prestasi di bidang keilmiahan, olahraga,
-        maupun bidang seni.
+        Kami dari IKSEDA FIB UI 2021 ingin memberikan ucapan selamat dan
+        apresiasi kepada teman-teman yang sudah mengharumkan nama IKSEDA FIB UI
+        dalam bidang akademik dan non-akademik baik di dalam maupun luar kampus
+        UI. Oleh sebab itu, kami ingin meminta kesediaan teman-teman untuk
+        memberikan data prestasi bagi kakak-kakak serta teman-teman yang sudah
+        pernah mengikuti ataupun memenangkan perlombaan.
         <br /> <br />
-        Bagi mahasiswa FEB UI yang mengisi formulir ini akan mendapatkan
-        insentif dari Kemahasiswaan FEB UI (untuk skala nasional dan
-        internasional) dan akan langsung dipublikasikan di media sosial BEM FEB
-        UI.
+        Harap mengisi form di bawah ini dengan data prestasi yang telah dicapai
+        dalam jangka waktu dari Desember 2021 sampai seterusnya.
         <br /> <br />
         Adapun hal-hal yang perlu diperhatikan saat pengisian formulir antara
         lain:
@@ -67,9 +65,7 @@ export default function CoverSection() {
           className='absolute right-0 bottom-0 w-6 translate-x-1/4 translate-y-1/4'
         />
         <div className='bg-paper grid grid-cols-1 gap-y-2 p-4 w-full text-sm border-2 border-primary-900 shadow-inner md:p-8'>
-          <p className='text-lg font-semibold'>
-            Congreytulations, High-Achievers!
-          </p>
+          <p className='text-lg font-semibold'>Dag, IKSEDA!</p>
           <div className='flex'>
             {highAchieverData.desc}
             <img
@@ -83,7 +79,7 @@ export default function CoverSection() {
               <SyaratItem key={i} id={i} syarat={syarat} />
             ))}
           </div>
-          <p className='mt-8 ml-auto font-semibold'>BEM FEB UI 2021</p>
+          <p className='mt-8 ml-auto font-semibold'>IKSEDA FIB UI 2021</p>
         </div>
       </div>
     </div>

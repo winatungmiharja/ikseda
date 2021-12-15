@@ -45,7 +45,7 @@ export default function MainSection() {
             <div className='p-4 w-full bg-primary-300 border border-primary-900 shadow-md'>
               <InputContact />
             </div>
-            <p className='mt-8 ml-auto font-semibold'>Ikseda UI 2021</p>
+            <p className='mt-8 ml-auto font-semibold'>IKSEDA FIB UI 2021</p>
           </div>
         </div>
       </div>

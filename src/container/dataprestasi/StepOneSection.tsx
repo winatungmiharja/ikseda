@@ -37,9 +37,9 @@ export default function StepOneSection({ setStep, step }: SectionType) {
     watch('line'),
     watch('npm'),
     watch('hp'),
-    watch('jurusan'),
-    watch('angkatan'),
-    watch('kegiatan'),
+    // watch('jurusan'),
+    // watch('angkatan'),
+    // watch('kegiatan'),
   ]);
 
   return (
@@ -91,7 +91,7 @@ export default function StepOneSection({ setStep, step }: SectionType) {
               validation={{ required: true, pattern: /^08\d{9,10}$/g }}
             />
           </div>
-          <div className='grid grid-cols-1 gap-2 md:grid-cols-3'>
+          {/* <div className='grid grid-cols-1 gap-2 md:grid-cols-3'>
             <SelectInput
               id='jurusan'
               label='Jurusan'
@@ -127,7 +127,7 @@ export default function StepOneSection({ setStep, step }: SectionType) {
                 </option>
               ))}
             </SelectInput>
-          </div>
+          </div> */}
 
           <div className='mt-auto ml-auto'>
             <Button type='submit' icon={<AiOutlineArrowRight size={20} />}>
