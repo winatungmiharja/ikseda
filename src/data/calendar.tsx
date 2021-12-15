@@ -9,50 +9,50 @@ export const dataCalendarSection = {
 export const dataCalendar: CalendarType[] = [
   {
     month: 'January',
-    img: '/images/image002.jpg',
+    img: 'https://res.cloudinary.com/etzy/image/upload/v1639538694/asset/achievement-kalender/Kalender/image002.jpg',
   },
   {
     month: 'February',
-    img: '/images/image002.jpg',
+    img: 'https://res.cloudinary.com/etzy/image/upload/v1639538694/asset/achievement-kalender/Kalender/image004.jpg',
   },
   {
     month: 'March',
-    img: '/images/image002.jpg',
-  },
-  {
-    month: 'May',
-    img: '/images/image002.jpg',
+    img: 'https://res.cloudinary.com/etzy/image/upload/v1639538694/asset/achievement-kalender/Kalender/image014.jpg',
   },
   {
     month: 'April',
-    img: '/images/image002.jpg',
+    img: 'https://res.cloudinary.com/etzy/image/upload/v1639538694/asset/achievement-kalender/Kalender/image006.jpg',
+  },
+  {
+    month: 'May',
+    img: 'https://res.cloudinary.com/etzy/image/upload/v1639538694/asset/achievement-kalender/Kalender/image008.jpg',
   },
   {
     month: 'Juni',
-    img: '/images/image002.jpg',
+    img: 'https://res.cloudinary.com/etzy/image/upload/v1639538694/asset/achievement-kalender/Kalender/image010.jpg',
   },
   {
     month: 'July',
-    img: '/images/image002.jpg',
+    img: 'https://res.cloudinary.com/etzy/image/upload/v1639538694/asset/achievement-kalender/Kalender/image012.jpg',
   },
   {
     month: 'August',
-    img: '/images/image002.jpg',
+    img: 'https://res.cloudinary.com/etzy/image/upload/v1639538694/asset/achievement-kalender/Kalender/image014.jpg',
   },
   {
     month: 'September',
-    img: '/images/image002.jpg',
+    img: 'https://res.cloudinary.com/etzy/image/upload/v1639538694/asset/achievement-kalender/Kalender/image016.jpg',
   },
   {
     month: 'October',
-    img: '/images/image002.jpg',
+    img: 'https://res.cloudinary.com/etzy/image/upload/v1639538694/asset/achievement-kalender/Kalender/image018.jpg',
   },
   {
     month: 'November',
-    img: '/images/image002.jpg',
+    img: 'https://res.cloudinary.com/etzy/image/upload/v1639538694/asset/achievement-kalender/Kalender/image020.jpg',
   },
   {
     month: 'December',
-    img: '/images/image002.jpg',
+    img: 'https://res.cloudinary.com/etzy/image/upload/v1639538694/asset/achievement-kalender/Kalender/PHOTO-2021-12-01-21-04-19.jpg',
   },
 ];
