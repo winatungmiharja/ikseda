@@ -13,7 +13,7 @@ const links = [
   { href: '/achievement', label: 'Achievement' },
   { href: '/contact', label: 'Contact Us' },
   { href: '/calendar', label: 'Calendar' },
-  { href: 'https://ikseda.fib.ui.ac.id/', label: 'Karya Tulis' },
+  { href: 'https://ikseda.fib.ui.ac.id/berichten/', label: 'Karya Tulis' },
 ];
 
 export default function Header() {
