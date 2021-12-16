@@ -5,7 +5,7 @@ import { ProkerType } from '@/lib/type';
 export default function ProkerCard({ value }: { value: ProkerType }) {
   return (
     <div
-      className='bg-teal snap-center flex-shrink-0 p-4 w-56 border-2 border-primary-900 shadow-sm md:p-8 md:w-1/3 hover:shadow'
+      className='bg-teal snap-center flex-shrink-0 p-4 border-2 border-primary-900 shadow-sm md:p-8 hover:shadow'
       style={{ minWidth: 'calc(100%/3)' }}
     >
       <div className='flex gap-2 items-center'>
@@ -14,9 +14,10 @@ export default function ProkerCard({ value }: { value: ProkerType }) {
             {value.icon}
           </div>
         </div>
-        <p className='text-lg font-bold text-primary-200'>{value.title}</p>
+        <p className='text-base font-bold text-primary-200 whitespace-nowrap'>
+          {value.title}
+        </p>
       </div>
-      <p className='content mt-2'>{value.content}</p>
     </div>
   );
 }

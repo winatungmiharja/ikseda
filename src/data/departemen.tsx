@@ -54,7 +54,8 @@ export const dataDepartemenDanBiro: DepartemenType[] = [
         icon: <IoIosArrowDroprightCircle size={20} />,
       },
       {
-        title: 'Webinar Studeren In Nederland',
+        title:
+          'Webinar Studeren In Nederland: Grow Dutch Universities Representative & Higher Education X IKSEDA',
         content: '',
         icon: <IoIosArrowDroprightCircle size={20} />,
       },
@@ -64,7 +65,12 @@ export const dataDepartemenDanBiro: DepartemenType[] = [
         icon: <IoIosArrowDroprightCircle size={20} />,
       },
       {
-        title: 'Subdidi BOP IKSEDA',
+        title: 'Kunjungan Lembaga',
+        content: '',
+        icon: <IoIosArrowDroprightCircle size={20} />,
+      },
+      {
+        title: 'Bedah Kampus UI',
         content: '',
         icon: <IoIosArrowDroprightCircle size={20} />,
       },
@@ -139,9 +145,9 @@ export const dataDepartemenDanBiro: DepartemenType[] = [
     ],
     proker: [
       {
-        title: 'Webinar Studeren In Nederland',
-        content:
-          'Grow Dutch Universities Representative & Higher Education X IKSEDA',
+        title:
+          'Webinar Studeren In Nederland: Grow Dutch Universities Representative & Higher Education X IKSEDA',
+        content: '',
         icon: <IoIosArrowDroprightCircle size={20} />,
       },
       {
@@ -176,6 +182,11 @@ export const dataDepartemenDanBiro: DepartemenType[] = [
       },
       {
         title: 'Halal bihalal IKSEDA VERHEVEN',
+        content: '',
+        icon: <IoIosArrowDroprightCircle size={20} />,
+      },
+      {
+        title: 'Games dan nongkrong online IKSEDA',
         content: '',
         icon: <IoIosArrowDroprightCircle size={20} />,
       },
@@ -564,7 +575,7 @@ export const dataDepartemenDanBiro: DepartemenType[] = [
       },
       {
         title: 'Kerja Sama IKSEDA dan SKS',
-        content: 'Penerjemahan Bahasa Belanda dalam Konteks Historis ',
+        content: '',
         icon: <IoIosArrowDroprightCircle size={20} />,
       },
       {
@@ -574,6 +585,11 @@ export const dataDepartemenDanBiro: DepartemenType[] = [
       },
       {
         title: 'Podcast IKSEDA',
+        content: '',
+        icon: <IoIosArrowDroprightCircle size={20} />,
+      },
+      {
+        title: 'IKSEDA VOOR PKM 2021',
         content: '',
         icon: <IoIosArrowDroprightCircle size={20} />,
       },
@@ -642,11 +658,6 @@ export const dataDepartemenDanBiro: DepartemenType[] = [
       },
       {
         title: 'Galang dana IKSEDA',
-        content: '',
-        icon: <IoIosArrowDroprightCircle size={20} />,
-      },
-      {
-        title: 'Subdidi BOP IKSEDA',
         content: '',
         icon: <IoIosArrowDroprightCircle size={20} />,
       },

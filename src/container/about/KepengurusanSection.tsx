@@ -47,12 +47,12 @@ export default function KepengurusanSection() {
           }}
           src='/images/particle-graph.svg'
           alt=''
-          className='animate-float absolute right-0 top-1/3 z-20 w-1/6 md:w-24'
+          className='animate-float absolute right-0 top-1/3 invisible z-20 w-1/6 md:visible md:w-24'
         />
         <motion.img
           src='/images/particle-arrow.svg'
           alt=''
-          className='absolute left-0 top-1/2 z-20 w-1/6 translate-y-1/2 md:w-24'
+          className='absolute left-0 top-1/2 invisible z-20 w-1/6 translate-y-1/2 md:visible md:w-24'
         />
         <motion.img
           animate={{ rotate: 5 }}
@@ -64,7 +64,7 @@ export default function KepengurusanSection() {
           }}
           src='/images/particle-telescope.svg'
           alt=''
-          className='1-1/6 absolute right-0 top-2/3 z-20 w-1/5 md:w-28'
+          className='1-1/6 absolute right-0 top-2/3 invisible z-20 w-1/5 md:visible md:w-28'
         />
         <motion.img
           src='/images/particle-notes.svg'
