@@ -28,7 +28,7 @@ export const postDataToNotion = async (
     },
   };
 
-  const res = await fetch('http://localhost:3000/api/achievements', {
+  const res = await fetch('/api/achievements', {
     method: 'POST',
     body: JSON.stringify(newData),
   });
