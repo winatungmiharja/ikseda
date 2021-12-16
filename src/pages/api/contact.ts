@@ -16,9 +16,11 @@ export default async function handler(
     });
   }
   try {
-    const { nama, email, nohp, pesan } = JSON.parse(req.body);
+    const { nama, email, nohp, pesan } = req.body;
     await notion.pages.create({
-      parent: { database_id: String(process.env.NOTION_DATABASE_ID) },
+      parent: {
+        database_id: String(process.env.NEXT_PUBLIC_NOTION_DATABASE_ID),
+      },
       properties: {
         Nama: {
           type: 'title',

@@ -207,10 +207,10 @@ export default async function handler(req, res) {
     });
   }
   try {
-    const { user, kegiatan, data, dokumen } = JSON.parse(req.body);
+    const { user, kegiatan, data, dokumen } = req.body;
     await notion.pages.create({
       parent: {
-        database_id: String(process.env.NOTION_FORM_ID),
+        database_id: String(process.env.NEXT_PUBLIC_NOTION_FORM_ID),
       },
       properties: {
         Name: {
