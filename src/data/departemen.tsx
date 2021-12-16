@@ -78,7 +78,7 @@ export const dataDepartemenDanBiro: DepartemenType[] = [
         status: 'Ketua Biro',
         name: 'Ananda Moza (2018)',
         type: 'light',
-        color: 'mustard',
+        color: 'magenta',
         img: 'https://res.cloudinary.com/etzy/image/upload/v1639538548/asset/Biro/Keuangan/Moza.jpg',
       },
       {
@@ -294,7 +294,7 @@ export const dataDepartemenDanBiro: DepartemenType[] = [
         status: 'Ketua Biro',
         name: 'Naaraparasantya. A (2018)',
         type: 'light',
-        color: 'mustard',
+        color: 'magenta',
         img: 'https://res.cloudinary.com/etzy/image/upload/v1639538548/asset/Departemen/Olahraga/IMG-20210125-WA0000.jpg',
       },
       {
@@ -469,7 +469,7 @@ export const dataDepartemenDanBiro: DepartemenType[] = [
         status: 'Ketua Biro',
         name: 'Intan Natasyah. P (2019)',
         type: 'light',
-        color: 'mustard',
+        color: 'magenta',
         img: 'https://res.cloudinary.com/etzy/image/upload/v1639538548/asset/Biro/Kestari/foto_intan.jpg',
       },
       {

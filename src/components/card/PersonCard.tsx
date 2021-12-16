@@ -16,7 +16,7 @@ export default function PersonCard({
       <img
         src={img}
         alt=''
-        className='aspect-[2/1] object-cover w-full md:aspect-[3/4]'
+        className='aspect-[2/1] object-cover w-full transition-all duration-150 ease-in-out md:aspect-[3/4] active:aspect-[3/4]'
       />
       <div
         className={clsx(
@@ -35,7 +35,7 @@ export default function PersonCard({
         )}
       >
         <p className='text-lg font-semibold'>{status}</p>
-        <p className='text-sm'>{name}</p>
+        <p className='text-sm whitespace-nowrap'>{name}</p>
       </div>
     </div>
   );

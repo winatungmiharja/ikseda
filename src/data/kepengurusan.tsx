@@ -17,21 +17,21 @@ export const dataKepengurusan: PersonType[] = [
     status: 'Wakil Ketua',
     name: 'Muhammad Rifqi Kurnia (2018)',
     type: 'light',
-    color: 'teal',
+    color: 'mustard',
     img: 'https://res.cloudinary.com/etzy/image/upload/v1639538550/asset/PI/Ketua%20-%20Wakil/IMG_20211129_172151.jpg',
   },
   {
     status: 'Sekretaris Umum',
     name: 'Angginta Amalia (2018)',
     type: 'light',
-    color: 'teal',
+    color: 'magenta',
     img: 'https://res.cloudinary.com/etzy/image/upload/v1639538548/asset/PI/Sekretaris%20Umum/IMG_20210122_155518.jpg',
   },
   {
     status: 'Bendahara Umum',
     name: 'Biba Ana Shiba (2018)',
     type: 'light',
-    color: 'teal',
+    color: 'navy',
     img: 'https://res.cloudinary.com/etzy/image/upload/v1639538578/asset/PI/Bendahara%20Umum/Biba.jpg',
   },
   {
@@ -45,7 +45,7 @@ export const dataKepengurusan: PersonType[] = [
     status: 'Mandataris 2',
     name: 'Mabelle Faiza Anindra (2019)',
     type: 'light',
-    color: 'teal',
+    color: 'mustard',
     img: 'https://res.cloudinary.com/etzy/image/upload/v1639538550/asset/PI/Mandataris/Belle.jpg',
   },
 ];
