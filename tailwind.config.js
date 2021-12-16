@@ -14,7 +14,7 @@ function withOpacity(variableName) {
 module.exports = {
   mode: 'jit',
   purge: ['./src/**/*.{js,jsx,ts,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+
   theme: {
     dropShadow: {
       DEFAULT: '2px 2px rgb(var(--tw-clr-primary-800))',
