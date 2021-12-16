@@ -27,7 +27,11 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/components/button/Button.tsxs"
+    "src/components/button/Button.tsxs",
+    "firebase/index.js",
+    "firebase/initFirebase.js",
+    "src/pages/api/contact.ts",
+    "src/pages/api/achievements.js"
   ],
   "moduleResolution": ["node_modules", ".next", "node"]
 }

@@ -3,12 +3,18 @@ import * as React from 'react';
 import { useFormContext } from 'react-hook-form';
 
 type StepType = {
+  disabled?: boolean;
   current: number;
   detail: string[];
   setStep: React.Dispatch<React.SetStateAction<number>>;
 };
 
-export default function Step({ current, detail, setStep }: StepType) {
+export default function Step({
+  current,
+  detail,
+  setStep,
+  disabled = false,
+}: StepType) {
   const { trigger } = useFormContext();
   const setNavigation = async (step: number) => {
     const isFullfilled = await trigger();
@@ -29,6 +35,7 @@ export default function Step({ current, detail, setStep }: StepType) {
               className={clsx('flex-1', {
                 'hidden md:block': current !== i + 1,
                 block: current === i + 1,
+                'opacity-50 pointer-events-none select-none': disabled,
               })}
               key={i}
             >

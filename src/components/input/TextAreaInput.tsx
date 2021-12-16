@@ -13,9 +13,9 @@ export type InputProps = {
   readOnly?: boolean;
   checkId?: string;
   dark?: boolean;
-} & React.ComponentPropsWithoutRef<'input'>;
+} & React.ComponentPropsWithoutRef<'textarea'>;
 
-export default function Input({
+export default function TextAreaInput({
   id,
   label,
   className,
@@ -23,9 +23,9 @@ export default function Input({
   helperText,
   placeholder = '',
   validation,
+  dark = false,
   readOnly = false,
   checkId,
-  dark = false,
   ...rest
 }: InputProps) {
   const {
@@ -52,11 +52,12 @@ export default function Input({
       >
         {label}
       </label>
-      <input
+      <textarea
         {...register(id, validation)}
         {...rest}
         className={clsx(
           'file:bg-primary-300 file:border file:border-dashed file:border-primary-900 file:hover:bg-primary-500 file:hover:text-primary-100 file:mr-2 file:shadow-inner',
+
           {
             'cursor-not-allowed bg-primary-200/30': readOnly,
           },
@@ -66,7 +67,6 @@ export default function Input({
           },
           className
         )}
-        type={type}
         id={type === 'checkbox' ? `${id}${checkId}` : id}
         name={id}
         aria-describedby={id}

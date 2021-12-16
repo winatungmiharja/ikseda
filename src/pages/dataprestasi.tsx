@@ -18,7 +18,7 @@ export default function DataPrestasiPage() {
             <CoverSection />
           </div>
 
-          <div className='flex relative z-10 flex-col justify-center items-center'>
+          <div className='flex relative z-10 flex-col justify-center items-center mb-16'>
             <div className='mt-4 w-full text-left md:mt-16'>
               <h2 className='font-outline-900-sm text-2xl text-primary-300 md:text-4xl'>
                 Input Data Prestasi

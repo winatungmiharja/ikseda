@@ -35,7 +35,7 @@ export default function Button({
         },
         {
           'bg-teal  hover:bg-navy  ': variants === 'primary',
-          'bg-mustard  hover:bg-primary-500 ': variants === 'secondary',
+          '  hover:bg-mustard bg-primary-500 ': variants === 'secondary',
         },
         {
           'relative !text-transparent hover:text-transparent !cursor-wait transition-none':

@@ -72,7 +72,14 @@ export type StepThreeType = {
   pencapaian: string;
   tanggalMulai: Date | null;
   tanggalAkhir: Date | null;
-  undangan: File | null;
-  sertifikat: File | null;
-  dokumentasi: File | null;
+  undangan: [File, MediaMetadata] | null;
+  sertifikat: [File, MediaMetadata] | null;
+  dokumentasi: [File, MediaMetadata] | null;
+};
+
+export type ContactType = {
+  nama: string;
+  email: string;
+  nohp: string;
+  pesan: string;
 };
