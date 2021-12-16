@@ -1,7 +1,7 @@
 import { Client } from '@notionhq/client';
 
 const notion = new Client({
-  auth: process.env.NEXT_PUBLIC_NOTION_API_KEY,
+  auth: process.env.NOTION_API_KEY,
 });
 
 const makeColumn = (title, content) => {
@@ -210,7 +210,7 @@ export default async function handler(req, res) {
     const { user, kegiatan, data, dokumen } = JSON.parse(req.body);
     await notion.pages.create({
       parent: {
-        database_id: String(process.env.NEXT_PUBLIC_NOTION_FORM_ID),
+        database_id: String(process.env.NOTION_FORM_ID),
       },
       properties: {
         Name: {

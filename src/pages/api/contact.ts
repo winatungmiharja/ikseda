@@ -2,7 +2,7 @@ import { Client } from '@notionhq/client';
 import { NextApiRequest, NextApiResponse } from 'next';
 
 const notion = new Client({
-  auth: process.env.NEXT_PUBLIC_NOTION_API_KEY,
+  auth: process.env.NOTION_API_KEY,
 });
 
 export default async function handler(
@@ -19,7 +19,7 @@ export default async function handler(
     const { nama, email, nohp, pesan } = JSON.parse(req.body);
     await notion.pages.create({
       parent: {
-        database_id: String(process.env.NEXT_PUBLIC_NOTION_DATABASE_ID),
+        database_id: String(process.env.NOTION_DATABASE_ID),
       },
       properties: {
         Nama: {
