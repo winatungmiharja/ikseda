@@ -17,7 +17,7 @@ export const dataCalendar: CalendarType[] = [
   },
   {
     month: 'March',
-    img: 'https://res.cloudinary.com/etzy/image/upload/v1639538694/asset/achievement-kalender/Kalender/image014.jpg',
+    img: 'https://res.cloudinary.com/etzy/image/upload/v1639573291/asset/achievement-kalender/Kalender/2892334.jpg',
   },
   {
     month: 'April',
