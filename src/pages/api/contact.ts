@@ -2,7 +2,7 @@ import { Client } from '@notionhq/client';
 import { NextApiRequest, NextApiResponse } from 'next';
 
 const notion = new Client({
-  auth: process.env.NOTION_API_KEY,
+  auth: process.env.NEXT_PUBLIC_NOTION_API_KEY,
 });
 
 export default async function handler(
