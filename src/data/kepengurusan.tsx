@@ -36,7 +36,7 @@ export const dataKepengurusan: PersonType[] = [
   },
   {
     status: 'Mandataris 1',
-    name: 'Fachri Nur Ikhsan Gunawan (2018)',
+    name: 'Fachri Nur Ikhsan Gunawan (2019)',
     type: 'light',
     color: 'teal',
     img: 'https://res.cloudinary.com/etzy/image/upload/v1639538544/asset/PI/Mandataris/Fachri.jpg',

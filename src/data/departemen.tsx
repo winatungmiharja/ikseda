@@ -100,7 +100,7 @@ export const dataDepartemenDanBiro: DepartemenType[] = [
       'Fairuz Rahimah (2020)',
       'Deanna Aisyah Nurcahya (2020)',
       'Saddatina Mutiara (2020) ',
-      'Uni Yosefa Br Tarigam (2020)',
+      'Uni Yosefa Br Tarigan (2020)',
     ],
     proker: [
       {
@@ -139,7 +139,7 @@ export const dataDepartemenDanBiro: DepartemenType[] = [
       'Deyva Budhyarty Nur (2019)',
       'Mita Ariqia (2019)',
       'Hanna Haris Rifai (2020)',
-      'Aulyra Fitri Sylvani (2020)',
+      'Aulyra Fitri Sylvanix (2020)',
       'Muhammad Fairuz Salam (2020)',
       'Ghozi Djayu Kumolo (2020)',
     ],
@@ -237,7 +237,7 @@ export const dataDepartemenDanBiro: DepartemenType[] = [
         icon: <IoIosArrowDroprightCircle size={20} />,
       },
       {
-        title: 'Verwelkomen 2021',
+        title: 'Thiskomt 2021',
         content: '',
         icon: <IoIosArrowDroprightCircle size={20} />,
       },
@@ -263,7 +263,7 @@ export const dataDepartemenDanBiro: DepartemenType[] = [
       },
     ],
     staff: [
-      'Novena Helen Rorimpandey (2019)',
+      'Engga Polia Fajarwati (2020)',
       'Muhammad Fikri Ramdahan (2019)',
       'Aubrey Charissa (2020)',
       'Aisyah Nathania (2020)',
@@ -318,7 +318,6 @@ export const dataDepartemenDanBiro: DepartemenType[] = [
     ],
     staff: [
       'Natasha Azzahra Aziz (2019)',
-      ' Muhammad Rafi (2019)',
       'Hasna Aulia Shabira (2020)',
       'Muhammad Iqbal Anggara. P (2020)',
       'Esther Dameria. A (2020)',
@@ -447,7 +446,7 @@ export const dataDepartemenDanBiro: DepartemenType[] = [
       'Muhammad Hawari Ibadillah (2020)',
       'Salwa Putri Abdiarti (2020)',
       'Ghiska Wina (2020)',
-      'Regita Marthaliva (2020)',
+      'Andrea Paramita Nurmalita Sari (2020)',
     ],
     proker: [
       {
@@ -530,10 +529,10 @@ export const dataDepartemenDanBiro: DepartemenType[] = [
       },
     ],
     staff: [
-      'Yasmin',
+      'Yasmin N. Oktaviani (2019)',
       'Ivana Dhea (2019)',
       'Rachel Wihelmina (2019)',
-      'Shafina',
+      'Shafina Sahrani (2019)',
       'Ficky Fadhilah (2020)',
       'Caesi Rosprianti (2020)',
     ],

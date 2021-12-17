@@ -5,7 +5,7 @@ export const aboutData: AboutType = {
   misi: [
     'Membangun atmosfir kekeluargaan dalam kepengurusan IKSEDA',
     'Menyusun kerja sama strategis antar biro-departemen',
-    'Memfasilitasi pengembangan minat bakat anggota IKSEDA dan merecruit serta training atlet dan seniman IKSEDA',
+    'Memfasilitasi pengembangan minat bakat anggota IKSEDA dan merecruit serta melatih atlet dan seniman IKSEDA',
     'Menguatkan media aspirasi untuk kepengurusan IKSEDA',
   ],
   visi: 'Menjadikan Ikseda organisasi yang sinergis, kolaboratif, progresif dan inovatif',
