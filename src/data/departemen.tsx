@@ -235,7 +235,7 @@ export const dataDepartemenDanBiro: DepartemenType[] = [
         type: 'event',
       },
       {
-        title: 'Thiskomt 2021',
+        title: 'Thuiskomt 2021',
         content: '',
         type: 'other',
       },
