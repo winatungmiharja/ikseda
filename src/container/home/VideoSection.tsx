@@ -8,7 +8,7 @@ export default function VideoSection() {
   const [isPlay, setIsPlay] = React.useState<boolean>(false);
   return (
     <div className='flex overflow-hidden px-2 py-4 bg-primary-400 md:min-h-main md:px-16 md:py-16'>
-      <div className='bg-video-grid w-full min-h-full bg-contain md:bg-fill'>
+      <div className='bg-video-grid w-full min-h-full bg-no-repeat bg-cover'>
         <div className='layout flex relative flex-col justify-center items-center p-8 min-h-full md:p-24'>
           <div className='relative max-w-2xl'>
             <img src='/images/video-frame.svg' alt='' className='w-full' />
