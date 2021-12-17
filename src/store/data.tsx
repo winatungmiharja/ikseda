@@ -19,8 +19,6 @@ const initialValueStepOne: StepOneType = {
   line: '',
   npm: '',
   hp: '',
-  jurusan: 'Akuntansi',
-  angkatan: '2016',
   kegiatan: 'Ilmiah',
 };
 

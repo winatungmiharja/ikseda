@@ -37,8 +37,6 @@ export default function StepOneSection({ setStep, step }: SectionType) {
     watch('line'),
     watch('npm'),
     watch('hp'),
-    watch('jurusan'),
-
     watch('kegiatan'),
   ]);
 
@@ -83,7 +81,6 @@ export default function StepOneSection({ setStep, step }: SectionType) {
               label={'ID Line'}
               validation={{ required: true }}
             />
-
             <Input
               type='number'
               id={'hp'}
@@ -91,38 +88,17 @@ export default function StepOneSection({ setStep, step }: SectionType) {
               validation={{ required: true, pattern: /^08\d{9,10}$/g }}
             />
           </div>
-          <div className='grid grid-cols-1 gap-2 md:grid-cols-2'>
-            <SelectInput
-              id='jurusan'
-              label='Jurusan'
-              validation={{ required: true }}
-            >
-              {[
-                'Akuntansi',
-                'Manajemen',
-                'Ilmu Ekonomi',
-                'Ilmu Ekonomi Islam',
-                'Bisnis Islam',
-              ].map((tahun) => (
-                <option value={tahun} key={tahun}>
-                  {tahun}
-                </option>
-              ))}
-            </SelectInput>
-
-            <SelectInput
-              id='kegiatan'
-              label='Bidang Kegiatan'
-              validation={{ required: true }}
-            >
-              {['Ilmiah', 'Olahraga', 'Seni'].map((bidang) => (
-                <option value={bidang} key={bidang}>
-                  {bidang}
-                </option>
-              ))}
-            </SelectInput>
-          </div>
-
+          <SelectInput
+            id='kegiatan'
+            label='Bidang Kegiatan'
+            validation={{ required: true }}
+          >
+            {['Ilmiah', 'Olahraga', 'Seni'].map((bidang) => (
+              <option value={bidang} key={bidang}>
+                {bidang}
+              </option>
+            ))}
+          </SelectInput>
           <div className='mt-auto ml-auto'>
             <Button type='submit' icon={<AiOutlineArrowRight size={20} />}>
               Selanjutnya

@@ -59,7 +59,6 @@ export type StepOneType = {
   line: string;
   npm: string;
   hp: string;
-  jurusan: string;
   kegiatan: string;
 };
 
