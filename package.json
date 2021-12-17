@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@notionhq/client": "^0.4.10",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/forms": "^0.4.0",
     "clsx": "^1.1.1",
     "embla-carousel-react": "^6.0.2",

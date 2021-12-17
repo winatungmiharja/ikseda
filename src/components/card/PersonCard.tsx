@@ -20,7 +20,7 @@ export default function PersonCard({
         layout='fill'
         src={img}
         alt=''
-        className='aspect-[3/4]'
+        className='aspect-h-4 aspect-w-3'
         imgClassName={clsx(
           'object-cover w-full transition-all duration-150 ease-in-out'
         )}
