@@ -24,7 +24,7 @@ export default function InputContact() {
     mode: 'onTouched',
     reValidateMode: 'onChange',
   });
-  const { handleSubmit, setValue } = methods;
+  const { handleSubmit, reset } = methods;
 
   const onSubmit = async (data: ContactType) => {
     setLoading(true);
@@ -45,14 +45,11 @@ export default function InputContact() {
 
   const resetState = () => {
     setLoading(false);
+    reset();
     setTimeout(() => {
       setError(false);
       setSuccess(false);
     }, 5000);
-    setValue('nama', '');
-    setValue('email', '');
-    setValue('nohp', '');
-    setValue('pesan', '');
   };
 
   return (

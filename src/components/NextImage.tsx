@@ -8,8 +8,8 @@ type NextImageProps = {
   imgClassName?: string;
   blurClassName?: string;
   alt: string;
-  width: string | number;
-  height: string | number;
+  width?: string | number;
+  height?: string | number;
 } & ImageProps;
 
 /**
@@ -40,11 +40,12 @@ export default function NextImage({
     >
       <Image
         className={clsx(
+          'bg-red-50',
           imgClassName,
-          // text-gray to hide alt text
-          status === 'loading' &&
-            clsx('bg-gray-400 animate-pulse', blurClassName)
+          status === 'loading' && clsx('animate-pulse', blurClassName)
         )}
+        placeholder='blur'
+        blurDataURL={String(src)}
         src={src}
         width={width}
         height={height}

@@ -1,7 +1,15 @@
 export type ProkerType = {
   title: string;
   content?: string;
-  icon: React.ReactNode;
+  type:
+    | 'culture'
+    | 'bussiness'
+    | 'person'
+    | 'event'
+    | 'media'
+    | 'academic'
+    | 'tech'
+    | 'other';
 };
 
 export type MandatarisType = {
@@ -52,7 +60,6 @@ export type StepOneType = {
   npm: string;
   hp: string;
   jurusan: string;
-  angkatan: string;
   kegiatan: string;
 };
 

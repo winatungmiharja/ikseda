@@ -238,7 +238,6 @@ export default async function handler(req, res) {
         makeDivider(),
         makeColumn('NPM', user.npm),
         makeColumn('Jurusan', user.jurusan),
-        makeColumn('Angkatan', user.angkatan),
         makeColumn('Kegiatan', user.kegiatan),
 
         makeDivider(),

@@ -38,7 +38,7 @@ export default function StepOneSection({ setStep, step }: SectionType) {
     watch('npm'),
     watch('hp'),
     watch('jurusan'),
-    watch('angkatan'),
+
     watch('kegiatan'),
   ]);
 
@@ -91,7 +91,7 @@ export default function StepOneSection({ setStep, step }: SectionType) {
               validation={{ required: true, pattern: /^08\d{9,10}$/g }}
             />
           </div>
-          <div className='grid grid-cols-1 gap-2 md:grid-cols-3'>
+          <div className='grid grid-cols-1 gap-2 md:grid-cols-2'>
             <SelectInput
               id='jurusan'
               label='Jurusan'
@@ -109,13 +109,7 @@ export default function StepOneSection({ setStep, step }: SectionType) {
                 </option>
               ))}
             </SelectInput>
-            <SelectInput id='angkatan' label='Angkatan'>
-              {[2016, 2017, 2018, 2019, 2020, 2021].map((tahun) => (
-                <option value={tahun} key={tahun}>
-                  {tahun}
-                </option>
-              ))}
-            </SelectInput>
+
             <SelectInput
               id='kegiatan'
               label='Bidang Kegiatan'

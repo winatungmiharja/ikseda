@@ -4,6 +4,8 @@ import * as React from 'react';
 
 import { PersonType } from '@/lib/type';
 
+import NextImage from '../NextImage';
+
 export default function PersonCard({
   status,
   name,
@@ -11,27 +13,22 @@ export default function PersonCard({
   color,
   img,
 }: PersonType) {
-  const [isImageOpen, setIsImageOpen] = React.useState<boolean>(false);
-
   return (
-    <div
-      className='relative border-2 border-primary-900 divide-x-0 divide-y-2 divide-primary-900 shadow-sm transition-all duration-150 ease-in-out hover:shadow-md'
-      onClick={() => setIsImageOpen(!isImageOpen)}
-    >
-      <img
+    <div className='relative border-2 border-primary-900 divide-x-0 divide-y-2 divide-primary-900 shadow-sm transition-all duration-150 ease-in-out hover:shadow-md'>
+      <NextImage
+        objectFit='cover'
+        layout='fill'
         src={img}
         alt=''
-        className={clsx(
-          'aspect-[2/1] object-cover w-full transition-all duration-150 ease-in-out md:aspect-[3/4]',
-          {
-            'aspect-[2/1]': !isImageOpen,
-            'aspect-[3/4]': isImageOpen,
-          }
+        className='aspect-[3/4]'
+        imgClassName={clsx(
+          'object-cover w-full transition-all duration-150 ease-in-out'
         )}
       />
+
       <div
         className={clsx(
-          'p-2',
+          'absolute bottom-0 p-2 w-full ',
           {
             'text-white': type === 'light',
           },
