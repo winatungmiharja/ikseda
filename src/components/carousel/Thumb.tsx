@@ -23,7 +23,6 @@ export const Thumb = ({ selected, onClick, imgSrc }: ThumbType) => (
     >
       <NextImage
         className='w-full border-2 border-primary-900'
-        priority
         src={imgSrc}
         alt='achievement'
         width={602}
