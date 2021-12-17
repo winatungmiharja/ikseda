@@ -30,7 +30,11 @@ export default function MainSection() {
         <LandingButton />
       </div>
       <div className='flex items-start mt-auto ml-auto w-11/12 lg:items-center lg:ml-0 lg:w-6/12'>
-        <img src='/images/ikseda-computer.svg' alt='komputerIkseda' />
+        <img
+          src='/images/ikseda-computer.svg'
+          alt='komputerIkseda'
+          className='w-full'
+        />
       </div>
     </div>
   );

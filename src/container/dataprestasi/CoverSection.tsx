@@ -66,14 +66,7 @@ export default function CoverSection() {
         />
         <div className='bg-paper grid grid-cols-1 gap-y-2 p-4 w-full text-sm border-2 border-primary-900 shadow-inner md:p-8'>
           <p className='text-lg font-semibold'>Dag, IKSEDA!</p>
-          <div className='flex'>
-            {highAchieverData.desc}
-            <img
-              src='/images/champion.svg'
-              alt=''
-              className='hidden mb-auto w-20 sm:block'
-            />
-          </div>
+          {highAchieverData.desc}
           <div className='flex flex-col divide-y divide-primary-900'>
             {highAchieverData.syarat.map((syarat, i) => (
               <SyaratItem key={i} id={i} syarat={syarat} />

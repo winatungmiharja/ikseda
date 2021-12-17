@@ -17,7 +17,7 @@ export default function CoverSection() {
         </div>
       </div>
       <div className='flex items-start ml-auto w-8/12 lg:items-center lg:ml-0 lg:w-5/12'>
-        <img src='/images/ikseda-megaphone.svg' alt='' className='' />
+        <img src='/images/ikseda-megaphone.svg' alt='' className='w-full' />
       </div>
     </div>
   );
