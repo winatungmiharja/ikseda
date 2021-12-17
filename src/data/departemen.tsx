@@ -398,7 +398,7 @@ export const dataDepartemenDanBiro: DepartemenType[] = [
         type: 'other',
       },
       {
-        title: 'Buku pesta cinta ',
+        title: 'Buku Pesta Cinta',
         content: '',
         type: 'academic',
       },
