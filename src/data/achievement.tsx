@@ -16,9 +16,9 @@ export const dataAchievement: AchievementType[] = [
       'Ghozi Djayu Kumolo (2020)',
     ],
     img: [
-      'https://drive.google.com/file/d/1STFIfyItjAcLYJX087qGGKIhlfyErIuI/view?usp=sharing',
-      'https://drive.google.com/file/d/19ACzS9EqCgxlDQL3w_vxiGjKo0Vqir7k/view?usp=sharing',
-      'https://drive.google.com/file/d/1MT1naPeM3-Z0E0ZoILqwNPQb_amhM3kn/view?usp=sharing',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image062.png',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image064.png',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image060.png',
     ],
     type: 'multiple',
   },
@@ -28,7 +28,7 @@ export const dataAchievement: AchievementType[] = [
       'Honourable Mention (3rd Highest) as the Kingdom of Netherlands, EuroMUN - Maastricht University',
     person: ['Lathifah Nurul Jannah (Sastra Belanda 2020)'],
     img: [
-      'https://drive.google.com/file/d/1J-7WbXuI_L9Stv33iJu23vk5ZZ_RC45H/view?usp=sharing',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image028.png',
     ],
     type: 'single',
   },
@@ -39,7 +39,7 @@ export const dataAchievement: AchievementType[] = [
       'Honorable Mention (2nd Highest Award) London International Model United Nations 2021',
     person: ['Ahsya Devinka (Sastra Belanda 2019)'],
     img: [
-      'https://drive.google.com/file/d/1vLWVTA-fSWRGHcn4WN3CWcDLAZvpz9Tr/view?usp=sharing',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image026.png',
     ],
     type: 'single',
   },
@@ -53,10 +53,10 @@ export const dataAchievement: AchievementType[] = [
       'Rifat (2021)',
     ],
     img: [
-      'https://drive.google.com/file/d/15p8t_Wg9OqlxkBlMheSR_Idy1tu4_Mvw/view?usp=sharing',
-      'https://drive.google.com/file/d/1KJz9w5ndTWGPqCWfIpbmInpYa9Ttz6zf/view?usp=sharing',
-      'https://drive.google.com/file/d/1v0PDcDhlHC2AE-ARmlXKpgHyLVyUMxzR/view?usp=sharing',
-      'https://drive.google.com/file/d/1ItXGY8RQFHxYXXz-IAyKnclTs9hd45hF/view?usp=sharing',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image054.png',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image048.png',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image052.png',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image050.png',
     ],
     type: 'multiple',
   },
@@ -71,11 +71,11 @@ export const dataAchievement: AchievementType[] = [
       'Reiner Ayton Joseph Amadeo Silitonga (2021)',
     ],
     img: [
-      'https://drive.google.com/file/d/1loCHlfZ0W6h4YW3Ko_uNOMbHvLlL3kvt/view?usp=sharing',
-      'https://drive.google.com/file/d/1DwWZT6ey2Irz8Qjus0QHGtPHzj_aiyAc/view?usp=sharing',
-      'https://drive.google.com/file/d/1CWbrVnIwnYGkDzHs-pJSIMDy4LBoISYT/view?usp=sharing',
-      'https://drive.google.com/file/d/14eYUxjC_VROkPADvqw-Aa0tLviyxQCGV/view?usp=sharing',
-      'https://drive.google.com/file/d/1ADRIihKYhmFGHCIOb7iKeAx0naY3Jsi1/view?usp=sharing',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image072.png',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image076.png',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image070.png',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image074.png',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image068.png',
     ],
     type: 'multiple',
   },
@@ -85,7 +85,7 @@ export const dataAchievement: AchievementType[] = [
       'Juara Senimatic Videography Competition, Youth Action Art Competition, Universitas Muhammadiyah Tasikmalaya 2020-2021.',
     person: ['M. Fariz Kurniawan (Sastra Belanda 2020)'],
     img: [
-      'https://drive.google.com/file/d/1q214H0TnSOr7wrAyB1SvySabvYYmE4WU/view?usp=sharing',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image024.png',
     ],
     type: 'single',
   },
@@ -96,7 +96,7 @@ export const dataAchievement: AchievementType[] = [
       'Relawan Covid-19 bagian Health Care Assistant di Rumah Sakit Universitas Indonesia',
     person: ['Rizki Putra Nur Amin (Sastra Belanda 2019)'],
     img: [
-      'https://drive.google.com/file/d/1zsX6HnazUA67Fw2tvtEIy7xayg-qsRCv/view?usp=sharing',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image030.png',
     ],
     type: 'single',
   },
@@ -105,7 +105,7 @@ export const dataAchievement: AchievementType[] = [
     title: 'Mahasiswa Berperstasi Utama FIB UI 2021',
     person: ['Sandra Novita Manik (Sastra Belanda 2018)'],
     img: [
-      'https://drive.google.com/file/d/1Mlk77I_ZAYRTXe6RhUcKqYCxQfOEG7eF/view?usp=sharing',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image022.png',
     ],
     type: 'single',
   },
@@ -118,7 +118,7 @@ export const dataAchievement: AchievementType[] = [
       'Marsha Huwaida (2020)',
     ],
     img: [
-      'https://drive.google.com/file/d/17cqrfasWtIRlWU3nlWKxqGOtADWBZs_C/view?usp=sharing',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image032.png',
     ],
     type: 'single',
   },
@@ -133,7 +133,7 @@ export const dataAchievement: AchievementType[] = [
       'George William Douglas Hutabarat (2019)',
     ],
     img: [
-      'https://drive.google.com/file/d/1ex-_yq5SExSoYecJ54z9jwg8NTLpVAk4/view?usp=sharing',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image034.png',
     ],
     type: 'single',
   },
@@ -147,7 +147,7 @@ export const dataAchievement: AchievementType[] = [
       'Varel Ervanda Putri Windharta (2021)',
     ],
     img: [
-      'https://drive.google.com/file/d/13R054g3fU7arJqHa6JyOe-EgE08Nj5A2/view?usp=sharing',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image036.png',
     ],
     type: 'single',
   },
@@ -162,7 +162,7 @@ export const dataAchievement: AchievementType[] = [
       'Yardan Juanda Prakusa (2021)',
     ],
     img: [
-      'https://drive.google.com/file/d/1RHzXH_33l6Jqtht2XLpziBwewwQ5AG4m/view?usp=sharing',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image038.png',
     ],
     type: 'single',
   },
@@ -175,7 +175,7 @@ export const dataAchievement: AchievementType[] = [
       'Ranu Mahesta (2021)',
     ],
     img: [
-      'https://drive.google.com/file/d/1snmz54RtlqQDzcHAUuqPQ4YWvyWH6fRm/view?usp=sharing',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image040.png',
     ],
     type: 'single',
   },
@@ -184,7 +184,7 @@ export const dataAchievement: AchievementType[] = [
     title: 'Juara 3 Cipta Poster OIM FIB UI 2021',
     person: ['Widya Wijayanti Setiawan (2020)'],
     img: [
-      'https://drive.google.com/file/d/1Fl5bkbiA1V34RSxnAeKjy1tIlti_7i7V/view?usp=sharing',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image042.png',
     ],
     type: 'single',
   },
@@ -193,7 +193,7 @@ export const dataAchievement: AchievementType[] = [
     title: 'Juara 1 OOTD OLIMBUD FIB UI 2021',
     person: ['Prabu Wiwaha Lambri (2020)'],
     img: [
-      'https://drive.google.com/file/d/1Uo-17tC5RtnJ8aAZkCTbBeP8ZhD8NkK_/view?usp=sharing',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image044.png',
     ],
     type: 'single',
   },
@@ -202,7 +202,7 @@ export const dataAchievement: AchievementType[] = [
     title: 'Juara 1 Magic Chess OLIMBUD FIB UI 2021',
     person: ['Vlady Pratama (2018)'],
     img: [
-      'https://drive.google.com/file/d/1JvpRZozXmWVlitvCTaEIx3Ak9Di2smhj/view?usp=sharing',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image046.png',
     ],
     type: 'single',
   },
@@ -212,7 +212,7 @@ export const dataAchievement: AchievementType[] = [
     title: 'Juara 2 Puisi OLIMBUD FIB UI 2021',
     person: ['Nastiti Swasini Nurfiranti  (2021)'],
     img: [
-      'https://drive.google.com/file/d/1FSu8jNA0AQS0M1TkVL9M69A9qpe-j42T/view?usp=sharing',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image056.png',
     ],
     type: 'single',
   },
@@ -221,7 +221,7 @@ export const dataAchievement: AchievementType[] = [
     title: 'Juara 2 Solois OLIMBUD FIB UI 2021',
     person: ['Rusmasiela Mewipiana Presilla (2021)'],
     img: [
-      'https://drive.google.com/file/d/12DfYJuFQRO1GNbmHkku4SecYdmkzdVlD/view?usp=sharing',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image058.png',
     ],
     type: 'single',
   },
@@ -230,7 +230,7 @@ export const dataAchievement: AchievementType[] = [
     title: 'Juara 3 Fotofrafi OLIMBUD FIB UI 2021',
     person: ['Najla Maharani (2021)'],
     img: [
-      'https://drive.google.com/file/d/1rnWri1_c7PGn5TNoXKPgV5TOggd-6ABG/view?usp=sharing',
+      'https://res.cloudinary.com/etzy/image/upload/v1639538692/asset/achievement-kalender/Achievment/image066.png',
     ],
     type: 'single',
   },

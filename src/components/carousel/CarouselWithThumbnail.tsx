@@ -43,7 +43,6 @@ const CarouselWithThumbnail = ({ images }: { images: string[] }) => {
               <div className='relative min-w-full' key={index}>
                 <div className='overflow-hidden relative h-full'>
                   <NextImage
-                    priority
                     className='w-full'
                     src={images[index]}
                     alt='achievement'

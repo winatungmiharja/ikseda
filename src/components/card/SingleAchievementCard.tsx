@@ -4,13 +4,6 @@ import { AchievementType } from '@/lib/type';
 
 import NextImage from '@/components/NextImage';
 
-const formatDriveUrl = (data: string): string => {
-  const first = data.indexOf('/d/') + 3;
-  const last = data.indexOf('/view');
-  const result = data.substring(first, last);
-  return `https://drive.google.com/uc?export=view&id=${result}`;
-};
-
 export default function SingleAchievementCard({
   value,
 }: {
@@ -21,7 +14,7 @@ export default function SingleAchievementCard({
       <div className='bg-small-grid p-8 pb-0 bg-top bg-no-repeat bg-contain'>
         <NextImage
           className='w-full border-2 border-primary-900 shadow-sm'
-          src={formatDriveUrl(value.img[0])}
+          src={value.img[0]}
           alt=''
           width={602}
           height={752}
