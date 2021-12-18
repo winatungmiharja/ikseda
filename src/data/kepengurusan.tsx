@@ -29,7 +29,7 @@ export const dataKepengurusan: PersonType[] = [
   },
   {
     status: 'Bendahara Umum',
-    name: 'Biba Ana Shiba (2018)',
+    name: 'Ana Shibaa H.I (2018)',
     type: 'light',
     color: 'navy',
     img: 'https://res.cloudinary.com/etzy/image/upload/v1639538578/asset/PI/Bendahara%20Umum/Biba.jpg',
