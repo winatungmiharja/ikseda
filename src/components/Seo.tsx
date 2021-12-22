@@ -9,8 +9,8 @@ const defaultMeta = {
   siteName: 'Ikatan Kekeluargaan Studi Belanda (IKSEDA)',
   description:
     'organisasi oleh Mahasiswa Program Studi Belanda Fakultas Ilmu Pengetahuan Budaya Universitas Indonesia',
-  url: 'https://ikseda.vercel.app/',
-  image: 'https://ikseda.vercel.app/favicon/large-og.png',
+  url: 'https://iksedafibui.com/',
+  image: 'https://iksedafibui.com/favicon/large-og.png',
   type: 'website',
   robots: 'follow, index',
 };

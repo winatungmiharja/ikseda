@@ -1,6 +1,5 @@
-// !STARTERCONF Change the siteUrl
 module.exports = {
-  siteUrl: 'https://ikseda.vercel.app/',
+  siteUrl: 'https://iksedafibui.com/',
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [{ userAgent: '*', allow: '/' }],
